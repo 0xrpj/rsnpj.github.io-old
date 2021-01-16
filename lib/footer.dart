@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:personalportfolio/widgets/social.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Footer extends StatelessWidget {
   @override
@@ -20,7 +21,9 @@ class Footer extends StatelessWidget {
             height: 10,
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              launch('https://github.com/FarrukhSajjad/portfolio-flutterWeb');
+            },
             child: Text(
               'get code </>',
               style: TextStyle(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:personalportfolio/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class ProjectsWidget extends StatefulWidget {
   final String projectName;
@@ -15,6 +16,7 @@ class ProjectsWidget extends StatefulWidget {
 class _ProjectsWidgetState extends State<ProjectsWidget> {
   @override
   Widget build(BuildContext context) {
+    double _width = MediaQuery.of(context).size.width;
     return Padding(
       padding: EdgeInsets.all(8),
       child: Column(
@@ -32,11 +34,12 @@ class _ProjectsWidgetState extends State<ProjectsWidget> {
               SelectableText(
                 widget.projectName,
                 style: projectTitleStyle,
+                maxLines: 1,
               ),
             ],
           ),
           SizedBox(
-            height: 20,
+            height: _width <= 600 ? 45 : 20,
           ),
           SelectableText(
             widget.projectDesc,
