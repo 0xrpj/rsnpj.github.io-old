@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:personalportfolio/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 
 class ProjectsWidget extends StatefulWidget {
   final String projectName;
@@ -39,12 +38,16 @@ class _ProjectsWidgetState extends State<ProjectsWidget> {
             ],
           ),
           SizedBox(
-            height: _width <= 600 ? 45 : 20,
+            height: _width <= 720 ? 45 : 20,
           ),
           SelectableText(
             widget.projectDesc,
-            textAlign: TextAlign.left,
-            style: projectDescriptionStyle,
+            textAlign: _width <= 1100 ? TextAlign.center : TextAlign.justify,
+            style: _width <= 1100
+                ? projectDescriptionStyle.copyWith(
+                    fontSize: 13,
+                  )
+                : projectDescriptionStyle,
           ),
           SizedBox(
             height: 20,

@@ -8,6 +8,7 @@ import '../constants.dart';
 class Aboutme extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double _width = MediaQuery.of(context).size.width;
     return Container(
       width: MediaQuery.of(context).size.width,
       child: IntrinsicHeight(
@@ -24,7 +25,7 @@ class Aboutme extends StatelessWidget {
                     'Hello! I am Farrukh',
                     style: GoogleFonts.ubuntu(
                       color: Colors.black,
-                      fontSize: 40,
+                      fontSize: _width <= 1100 ? 30 : 40,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -32,25 +33,23 @@ class Aboutme extends StatelessWidget {
                     height: 30,
                   ),
                   SelectableText(
-                    'I\'m passionate, creative and multi-disciplinary full stack developer working mainly on freelance\nprojects, developing and designing interactive web applications for brands for 4+ years.',
-                    style: projectDescriptionStyle,
-                    textAlign: TextAlign.right,
+                    'An easily excited and a highly passionate full stack developer\ntrying to support the world of open source with his little\nefforts. Full of eagerness to learn and work on new technologies. :)',
+                    style: _width <= 1100
+                        ? projectDescriptionStyle.copyWith(fontSize: 12)
+                        : projectDescriptionStyle,
+                    textAlign:
+                        _width <= 1100 ? TextAlign.center : TextAlign.right,
                   ),
                   SizedBox(
                     height: 15,
                   ),
                   SelectableText(
-                    'Proficinet in Front-end Development, Backend Development and Web Design.',
-                    style: projectDescriptionStyle,
-                    textAlign: TextAlign.right,
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  SelectableText(
-                    'Open source contributer, trying to make the open source projects more functional with my skills and\nefforts.',
-                    style: projectDescriptionStyle,
-                    textAlign: TextAlign.right,
+                    'Proficinet in Front-end Development and Mobile Development.',
+                    style: _width <= 1100
+                        ? projectDescriptionStyle.copyWith(fontSize: 12)
+                        : projectDescriptionStyle,
+                    textAlign:
+                        _width <= 1100 ? TextAlign.center : TextAlign.right,
                   ),
                   SizedBox(
                     height: 30,
@@ -115,6 +114,14 @@ class Aboutme extends StatelessWidget {
                         MdiIcons.unity,
                         size: 50,
                       ),
+                      SizedBox(
+                        width: 35,
+                      ),
+                      Icon(
+                        MdiIcons.searchWeb,
+                        size: 50,
+                        color: Colors.black,
+                      ),
                     ],
                   ),
                   SizedBox(
@@ -144,7 +151,7 @@ class WebTech extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         FlutterLogo(
-          size: _width <= 600 ? 40 : 50,
+          size: _width <= 720 ? 40 : 50,
         ),
         // Icon(Iconic.)
         SizedBox(
@@ -152,7 +159,7 @@ class WebTech extends StatelessWidget {
         ),
         Icon(
           Brandico.wordpress_1,
-          size: _width <= 600 ? 40 : 50,
+          size: _width <= 720 ? 40 : 50,
         ),
         // Icon(Zocial.)
         SizedBox(
@@ -160,7 +167,7 @@ class WebTech extends StatelessWidget {
         ),
         Icon(
           MdiIcons.googleAds,
-          size: _width <= 600 ? 40 : 50,
+          size: _width <= 720 ? 40 : 50,
         ),
         // Icon(Zocial.)
         SizedBox(
@@ -168,7 +175,7 @@ class WebTech extends StatelessWidget {
         ),
         Icon(
           MdiIcons.firebase,
-          size: _width <= 600 ? 40 : 50,
+          size: _width <= 720 ? 40 : 50,
         ),
       ],
     );
@@ -210,35 +217,35 @@ class ProgrammingLanguages extends StatelessWidget {
       children: [
         Icon(
           MdiIcons.languageJava,
-          size: _width <= 600 ? 40 : 50,
+          size: _width <= 720 ? 40 : 50,
         ),
         SizedBox(
-          width: _width <= 600 ? 25 : 35,
+          width: _width <= 720 ? 25 : 35,
         ),
         Icon(
           MdiIcons.languageCpp,
-          size: _width <= 600 ? 40 : 50,
+          size: _width <= 720 ? 40 : 50,
         ),
         SizedBox(
-          width: _width <= 600 ? 25 : 35,
+          width: _width <= 720 ? 25 : 35,
         ),
         Icon(
           MdiIcons.languageHtml5,
-          size: _width <= 600 ? 40 : 50,
+          size: _width <= 720 ? 40 : 50,
         ),
         SizedBox(
-          width: _width <= 600 ? 25 : 35,
+          width: _width <= 720 ? 25 : 35,
         ),
         Icon(
           MdiIcons.languageCss3,
-          size: _width <= 600 ? 40 : 50,
+          size: _width <= 720 ? 40 : 50,
         ),
         SizedBox(
-          width: _width <= 600 ? 25 : 35,
+          width: _width <= 720 ? 25 : 35,
         ),
         Icon(
           MdiIcons.androidStudio,
-          size: _width <= 600 ? 40 : 50,
+          size: _width <= 720 ? 40 : 50,
         ),
       ],
     );
@@ -282,14 +289,14 @@ class AboutmeTile extends StatelessWidget {
         children: [
           Icon(
             Icons.info_outline,
-            size: 50,
+            size: _width <= 900 ? 35 : 50,
           ),
           SizedBox(
             width: 10,
           ),
           SelectableText(
             'about me',
-            style: _width <= 600
+            style: _width <= 900
                 ? infortitleStyle.copyWith(fontSize: 38)
                 : infortitleStyle,
           ),

@@ -1,26 +1,26 @@
 import 'package:floating_action_bubble/floating_action_bubble.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:personalportfolio/constants.dart';
-import 'package:personalportfolio/footer.dart';
 import 'package:personalportfolio/widgets/about_me.dart';
 import 'package:personalportfolio/widgets/projects.dart';
 import 'package:personalportfolio/widgets/social.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../constants.dart';
+import '../footer.dart';
 
 Animation<double> _animation;
 AnimationController _animationController;
 
 IconData iconData = Icons.menu;
 
-class DesktopScreen extends StatefulWidget {
+class MediumScreen extends StatefulWidget {
   @override
-  _DesktopScreenState createState() => _DesktopScreenState();
+  _MediumScreenState createState() => _MediumScreenState();
 }
 
-class _DesktopScreenState extends State<DesktopScreen>
+class _MediumScreenState extends State<MediumScreen>
     with SingleTickerProviderStateMixin {
   launchUrl(String url) async {
     await launch(url);
@@ -42,6 +42,7 @@ class _DesktopScreenState extends State<DesktopScreen>
 
   @override
   Widget build(BuildContext context) {
+    double _width = MediaQuery.of(context).size.width;
     return Scaffold(
       // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: MenuButton(),
@@ -61,7 +62,9 @@ class _DesktopScreenState extends State<DesktopScreen>
                     children: [
                       Container(
                         // color: Colors.yellow,
-                        height: MediaQuery.of(context).size.height / 1.5,
+                        height: _width <= 1100
+                            ? MediaQuery.of(context).size.height / 1.5
+                            : MediaQuery.of(context).size.height / 2.5,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -119,31 +122,6 @@ class _DesktopScreenState extends State<DesktopScreen>
                 Footer(),
               ],
             ),
-            // Positioned(
-            //   top: MediaQuery.of(context).size.height / 2,
-            //   child: Padding(
-            //     padding: const EdgeInsets.only(left: 18.0),
-            //     child: GestureDetector(
-            //       onTap: () {},
-            //       child: AnimatedContainer(
-            //         duration: Duration(
-            //           milliseconds: 250,
-            //         ),
-            //         decoration: BoxDecoration(
-            //           shape: BoxShape.circle,
-            //           border: Border.all(
-            //             color: Colors.black,
-            //             width: 3,
-            //           ),
-            //         ),
-            //         child: Icon(
-            //           Icons.menu,
-            //           size: 80,
-            //         ),
-            //       ),
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       ),

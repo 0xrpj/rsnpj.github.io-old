@@ -26,11 +26,12 @@ class Projects extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 28.0, left: 28),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ProjectsWidget(
                     projectName: 'Air Quality Index Mobile App',
                     projectDesc:
-                        'Global Weather Web App is used to check weather condition of any location/city by inputting\nthe City name. I am Using AccuWeather API to display information about weather for any\nlocation. This application is build in React and Asp.net Core using Rest API. This is a single\nmodule for Global Tourism Web Application and will be combined with other modules to make\nautomated Tourism web app.',
+                        'Air Quality Index App is used to check the quality of air of your location\nI am using IqAir API to display information about your location.\nThis application is built in Flutter.',
                     url:
                         'https://github.com/FarrukhSajjad/airquality-flutterapp',
                   ),
@@ -40,7 +41,7 @@ class Projects extends StatelessWidget {
                   ProjectsWidget(
                     projectName: 'SPACE - Breathing Excercise Mobile App',
                     projectDesc:
-                        'Global Weather Web App is used to check weather condition of any location/city by inputting\nthe City name. I am Using AccuWeather API to display information about weather for any\nlocation. This application is build in React and Asp.net Core using Rest API. This is a single\nmodule for Global Tourism Web Application and will be combined with other modules to make\nautomated Tourism web app.',
+                        'SPACE is a breathing excercise app build using flutter.\nIt consists of various breathing excercise to help us relax.',
                     url:
                         'https://github.com/FarrukhSajjad/space-breathingexerciseapp-flutter',
                   ),
@@ -50,7 +51,7 @@ class Projects extends StatelessWidget {
                   ProjectsWidget(
                     projectName: 'Hashtags for Instagram',
                     projectDesc:
-                        'Global Weather Web App is used to check weather condition of any location/city by inputting\nthe City name. I am Using AccuWeather API to display information about weather for any\nlocation. This application is build in React and Asp.net Core using Rest API. This is a single\nmodule for Global Tourism Web Application and will be combined with other modules to make\nautomated Tourism web app.',
+                        'This app contains a large collection of different categories of hashtags.\nThese hashtags helps to reach out to more people on instagram.\nThis app is built using Flutter',
                     url: 'https://github.com/FarrukhSajjad/hastagsforinstagram',
                   ),
                 ],
@@ -66,19 +67,24 @@ class Projects extends StatelessWidget {
 class ProjectTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double _width = MediaQuery.of(context).size.width;
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(
           Icons.computer,
-          size: 50,
+          size: _width <= 900 ? 35 : 50,
         ),
         SizedBox(
           width: 10,
         ),
         SelectableText(
           'projects',
-          style: infortitleStyle,
+          style: _width <= 900
+              ? infortitleStyle.copyWith(
+                  fontSize: 30,
+                )
+              : infortitleStyle,
         ),
       ],
     );

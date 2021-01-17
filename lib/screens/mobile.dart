@@ -134,6 +134,13 @@ class _MobileState extends State<Mobile> {
                       SizedBox(
                         height: 10,
                       ),
+                      SelectableText(
+                        'An easily excited and a highly passionate full stack developer trying to support the world of open source with his little efforts. Full of eagerness to learn and work on new technologies. :)',
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
                       ProgrammingTile(),
                       SizedBox(
                         height: 10,

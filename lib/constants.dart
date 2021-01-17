@@ -50,3 +50,5 @@ const projectDescriptionStyle = TextStyle(
 
 Color firstProjectBackgroundColor = Color.fromRGBO(243, 243, 243, 1);
 Color firstProjectIconColor = Colors.black;
+
+ScrollController scrollController = ScrollController();
