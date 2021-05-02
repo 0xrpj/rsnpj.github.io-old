@@ -48,6 +48,9 @@ const projectDescriptionStyle = TextStyle(
   fontSize: 18,
 );
 
+const projectDescriptionStyleWithHeight =
+    TextStyle(color: Colors.black, fontSize: 18, height: 1.5);
+
 Color firstProjectBackgroundColor = Color.fromRGBO(243, 243, 243, 1);
 Color firstProjectIconColor = Colors.black;
 

@@ -22,10 +22,10 @@ class Aboutme extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   SelectableText(
-                    'Hello! I am Farrukh',
+                    'Hi, Nice to see you here.',
                     style: GoogleFonts.ubuntu(
                       color: Colors.black,
-                      fontSize: _width <= 1100 ? 30 : 40,
+                      fontSize: _width <= 1100 ? 30 : 30,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -33,7 +33,7 @@ class Aboutme extends StatelessWidget {
                     height: 30,
                   ),
                   SelectableText(
-                    'An easily excited and a highly passionate full stack developer\ntrying to support the world of open source with his little\nefforts. Full of eagerness to learn and work on new technologies. :)',
+                    'So, I currently am a CS Undergraduate and soon to be a software engineer \n\nwith a high level of interest (massive) in development and deployment of \n\nweb & mobile applications and anything that involves computers. :)',
                     style: _width <= 1100
                         ? projectDescriptionStyle.copyWith(fontSize: 12)
                         : projectDescriptionStyle,
@@ -44,7 +44,8 @@ class Aboutme extends StatelessWidget {
                     height: 15,
                   ),
                   SelectableText(
-                    'Proficinet in Front-end Development and Mobile Development.',
+                    // 'Proficient in Web development (MERN Stack) and App Development (flutter).',
+                    '',
                     style: _width <= 1100
                         ? projectDescriptionStyle.copyWith(fontSize: 12)
                         : projectDescriptionStyle,
@@ -83,7 +84,7 @@ class Aboutme extends StatelessWidget {
                         'miscelleanous',
                         style: GoogleFonts.ubuntu(
                           color: Colors.black,
-                          fontSize: 40,
+                          fontSize: 30,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -96,30 +97,38 @@ class Aboutme extends StatelessWidget {
                     children: [
                       Icon(
                         Brandico.github_text,
-                        size: 50,
+                        size: 40,
                       ),
                       // Icon(Zocial.)
                       SizedBox(
                         width: 35,
                       ),
                       Icon(
-                        MdiIcons.youtubeGaming,
-                        size: 50,
+                        MdiIcons.console,
+                        size: 40,
                       ),
                       // Icon(Zocial.)
                       SizedBox(
                         width: 35,
                       ),
                       Icon(
-                        MdiIcons.unity,
-                        size: 50,
+                        MdiIcons.ubuntu,
+                        size: 40,
                       ),
                       SizedBox(
                         width: 35,
                       ),
                       Icon(
-                        MdiIcons.searchWeb,
-                        size: 50,
+                        MdiIcons.microsoftVisualStudioCode,
+                        size: 40,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 35,
+                      ),
+                      Icon(
+                        MdiIcons.androidStudio,
+                        size: 40,
                         color: Colors.black,
                       ),
                     ],
@@ -150,24 +159,29 @@ class WebTech extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        FlutterLogo(
-          size: _width <= 720 ? 40 : 50,
-        ),
         // Icon(Iconic.)
-        SizedBox(
-          width: 35,
-        ),
+        // SizedBox(
+        //   width: 35,
+        // ),
         Icon(
           Brandico.wordpress_1,
-          size: _width <= 720 ? 40 : 50,
+          size: _width <= 720 ? 30 : 40,
         ),
         // Icon(Zocial.)
         SizedBox(
           width: 35,
         ),
+
         Icon(
-          MdiIcons.googleAds,
-          size: _width <= 720 ? 40 : 50,
+          MdiIcons.languageHtml5,
+          size: _width <= 720 ? 30 : 40,
+        ),
+        SizedBox(
+          width: 35,
+        ),
+        Icon(
+          MdiIcons.languageCss3,
+          size: _width <= 720 ? 30 : 40,
         ),
         // Icon(Zocial.)
         SizedBox(
@@ -175,7 +189,21 @@ class WebTech extends StatelessWidget {
         ),
         Icon(
           MdiIcons.firebase,
-          size: _width <= 720 ? 40 : 50,
+          size: _width <= 720 ? 30 : 40,
+        ),
+        SizedBox(
+          width: 35,
+        ),
+        Icon(
+          MdiIcons.react,
+          size: _width <= 720 ? 30 : 40,
+        ),
+        SizedBox(
+          width: 35,
+        ),
+        Icon(
+          MdiIcons.nodejs,
+          size: _width <= 720 ? 30 : 40,
         ),
       ],
     );
@@ -199,7 +227,7 @@ class WebTile extends StatelessWidget {
           'web',
           style: GoogleFonts.ubuntu(
             color: Colors.black,
-            fontSize: 40,
+            fontSize: 30,
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -215,37 +243,67 @@ class ProgrammingLanguages extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(
-          MdiIcons.languageJava,
-          size: _width <= 720 ? 40 : 50,
+        ColorFiltered(
+          colorFilter: ColorFilter.matrix(<double>[
+            0.2126,
+            0.7152,
+            0.0722,
+            0,
+            0,
+            0.2126,
+            0.7152,
+            0.0722,
+            0,
+            0,
+            0.2126,
+            0.7152,
+            0.0722,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+          ]),
+          child: FlutterLogo(
+            size: _width <= 720 ? 30 : 40,
+          ),
         ),
         SizedBox(
           width: _width <= 720 ? 25 : 35,
         ),
         Icon(
-          MdiIcons.languageCpp,
-          size: _width <= 720 ? 40 : 50,
+          MdiIcons.languageJava,
+          size: _width <= 720 ? 30 : 40,
+        ),
+        SizedBox(
+          width: _width <= 720 ? 25 : 35,
+        ),
+        Icon(
+          MdiIcons.languageC,
+          size: _width <= 720 ? 30 : 40,
+        ),
+        SizedBox(
+          width: _width <= 720 ? 25 : 35,
+        ),
+        Icon(
+          MdiIcons.languagePython,
+          size: _width <= 720 ? 30 : 40,
         ),
         SizedBox(
           width: _width <= 720 ? 25 : 35,
         ),
         Icon(
           MdiIcons.languageHtml5,
-          size: _width <= 720 ? 40 : 50,
+          size: _width <= 720 ? 30 : 40,
         ),
         SizedBox(
           width: _width <= 720 ? 25 : 35,
         ),
         Icon(
-          MdiIcons.languageCss3,
-          size: _width <= 720 ? 40 : 50,
-        ),
-        SizedBox(
-          width: _width <= 720 ? 25 : 35,
-        ),
-        Icon(
-          MdiIcons.androidStudio,
-          size: _width <= 720 ? 40 : 50,
+          MdiIcons.languageJavascript,
+          size: _width <= 720 ? 30 : 40,
         ),
       ],
     );
@@ -269,7 +327,7 @@ class ProgrammingTile extends StatelessWidget {
           'programming',
           style: GoogleFonts.ubuntu(
             color: Colors.black,
-            fontSize: 40,
+            fontSize: 30,
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -289,7 +347,7 @@ class AboutmeTile extends StatelessWidget {
         children: [
           Icon(
             Icons.info_outline,
-            size: _width <= 900 ? 35 : 50,
+            size: _width <= 900 ? 35 : 40,
           ),
           SizedBox(
             width: 10,

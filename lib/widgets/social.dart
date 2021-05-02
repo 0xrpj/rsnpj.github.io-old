@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:social_media_buttons/social_media_button.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../constants.dart';
 
@@ -44,7 +45,7 @@ class _State extends State<Socials> {
               },
               child: GestureDetector(
                 onTap: () {
-                  launchUrl('https://github.com/FarrukhSajjad');
+                  launchUrl('https://github.com/rsnpj');
                 },
                 child: AnimatedContainer(
                   duration: Duration(
@@ -60,7 +61,7 @@ class _State extends State<Socials> {
                   ),
                   child: Center(
                     child: SocialMediaButton.github(
-                      url: 'https://github.com/FarrukhSajjad',
+                      url: 'https://github.com/rsnpj',
                       color: githubiconColor,
                     ),
                   ),
@@ -98,8 +99,7 @@ class _State extends State<Socials> {
               },
               child: GestureDetector(
                 onTap: () {
-                  launchUrl(
-                      'https://www.linkedin.com/in/farrukh-sajjad-673654158/');
+                  launchUrl('https://www.linkedin.com/in/rsnpj/');
                 },
                 child: AnimatedContainer(
                   duration: Duration(
@@ -115,8 +115,7 @@ class _State extends State<Socials> {
                   ),
                   child: Center(
                     child: SocialMediaButton.linkedin(
-                      url:
-                          'https://www.linkedin.com/in/farrukh-sajjad-673654158/',
+                      url: 'https://www.linkedin.com/in/rsnpj/',
                       color: linkediniconColor,
                     ),
                   ),
@@ -154,7 +153,7 @@ class _State extends State<Socials> {
               },
               child: GestureDetector(
                 onTap: () {
-                  launchUrl('https://facebook.com/farrukh.sajjad.12');
+                  launchUrl('https://facebook.com/rsnpj');
                 },
                 child: AnimatedContainer(
                   duration: Duration(
@@ -170,7 +169,7 @@ class _State extends State<Socials> {
                   ),
                   child: Center(
                     child: SocialMediaButton.facebook(
-                      url: 'https://facebook.com/farrukh.sajjad.12',
+                      url: 'https://facebook.com/rsnpj',
                       color: facebookiconColor,
                     ),
                   ),
@@ -207,7 +206,7 @@ class _State extends State<Socials> {
               },
               child: GestureDetector(
                 onTap: () {
-                  launchUrl('https://farrukhsajjad.medium.com/');
+                  launchUrl('https://rsnpj.medium.com/');
                 },
                 child: AnimatedContainer(
                   duration: Duration(
@@ -223,7 +222,7 @@ class _State extends State<Socials> {
                   ),
                   child: Center(
                     child: SocialMediaButton.medium(
-                      url: 'https://farrukhsajjad.medium.com/',
+                      url: 'https://rsnpj.medium.com/',
                       color: mediumiconColor,
                     ),
                   ),
@@ -289,5 +288,11 @@ class _State extends State<Socials> {
     );
   }
 
-  void launchUrl(String s) {}
+  void launchUrl(String s) async {
+    if (await canLaunch(s))
+      await launch(s);
+    else
+      // can't launch url, there is some error
+      throw "Could not launch $s";
+  }
 }

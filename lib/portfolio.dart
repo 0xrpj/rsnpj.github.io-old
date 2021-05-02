@@ -17,14 +17,5 @@ class Portfolio extends StatelessWidget {
       return MediumScreen();
     } else
       return DesktopScreen();
-
-    // if (_width <= 720 && _width > 300) {
-    //   return Mobile();
-    // } else if (_width <= 1100) {
-    //   return MediumScreen();
-    // } else if (_width <= 300) {
-    //   return Smallest();
-    // } else
-    //   return DesktopScreen();
   }
 }

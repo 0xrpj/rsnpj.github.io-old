@@ -42,12 +42,14 @@ class _ProjectsWidgetState extends State<ProjectsWidget> {
           ),
           SelectableText(
             widget.projectDesc,
-            textAlign: _width <= 1100 ? TextAlign.center : TextAlign.justify,
+            // textAlign: _width <= 1100 ? TextAlign.justify : TextAlign.justify,
+            textAlign: TextAlign.justify,
+
             style: _width <= 1100
-                ? projectDescriptionStyle.copyWith(
+                ? projectDescriptionStyleWithHeight.copyWith(
                     fontSize: 13,
                   )
-                : projectDescriptionStyle,
+                : projectDescriptionStyleWithHeight,
           ),
           SizedBox(
             height: 20,

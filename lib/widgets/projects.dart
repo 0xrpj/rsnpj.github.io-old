@@ -28,31 +28,43 @@ class Projects extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  ProjectsWidget(
-                    projectName: 'Air Quality Index Mobile App',
-                    projectDesc:
-                        'Air Quality Index App is used to check the quality of air of your location\nI am using IqAir API to display information about your location.\nThis application is built in Flutter.',
-                    url:
-                        'https://github.com/FarrukhSajjad/airquality-flutterapp',
+                  SizedBox(
+                    width: 350,
+                    child: ProjectsWidget(
+                      projectName: 'Chat application',
+                      projectDesc:
+                          'Coded a chat application from with HTML, CSS, JS, NodeJS, Express, and Socket.io but with no database to store data (for privacy concerns).',
+                      url:
+                          'https://github.com/rsnpj/Inventory-Managment-System-in-C',
+                    ),
                   ),
                   SizedBox(
                     height: 35,
                   ),
-                  ProjectsWidget(
-                    projectName: 'SPACE - Breathing Excercise Mobile App',
-                    projectDesc:
-                        'SPACE is a breathing excercise app build using flutter.\nIt consists of various breathing excercise to help us relax.',
-                    url:
-                        'https://github.com/FarrukhSajjad/space-breathingexerciseapp-flutter',
+                  SizedBox(
+                    width: 350,
+                    child: ProjectsWidget(
+                      projectName: 'Inventory Management',
+                      projectDesc:
+                          'Wrote a simple yet useful C program to take care of inventories on a small vegetable shop. It handles basic CRUD operations locally with searching ability and password protection.',
+                      url:
+                          'https://github.com/rsnpj/Inventory-Managment-System-in-C',
+                    ),
                   ),
                   SizedBox(
                     height: 35,
                   ),
-                  ProjectsWidget(
-                    projectName: 'Hashtags for Instagram',
-                    projectDesc:
-                        'This app contains a large collection of different categories of hashtags.\nThese hashtags helps to reach out to more people on instagram.\nThis app is built using Flutter',
-                    url: 'https://github.com/FarrukhSajjad/hastagsforinstagram',
+                  SizedBox(
+                    width: 340,
+                    child: ProjectsWidget(
+                      projectName: 'Misc Small Projects',
+                      projectDesc:
+                          'I worked in a lot of small projects including the design and deployment of a vscode theme, dating app UI (in flutter), Phonebook management (in java), cafe website UI and a lot more.',
+                      url: 'https://github.com/rsnpj?tab=repositories',
+                    ),
+                  ),
+                  SizedBox(
+                    height: 100,
                   ),
                 ],
               ),

@@ -1,11 +1,13 @@
 import 'package:floating_action_bubble/floating_action_bubble.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:personalportfolio/constants.dart';
 import 'package:personalportfolio/footer.dart';
 import 'package:personalportfolio/widgets/about_me.dart';
+import 'package:personalportfolio/widgets/education.dart';
+import 'package:personalportfolio/widgets/experience.dart';
+import 'package:personalportfolio/widgets/contact.dart';
 import 'package:personalportfolio/widgets/projects.dart';
 import 'package:personalportfolio/widgets/social.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -69,17 +71,17 @@ class _DesktopScreenState extends State<DesktopScreen>
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 SelectableText(
-                                  'Farrukh',
+                                  'Roshan',
                                   style: titleTextColor,
                                 ),
                                 SelectableText(
-                                  'Sajjad',
+                                  'Parajuli',
                                   style: titleTextColor,
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(right: 8.0),
                                   child: SelectableText(
-                                    'flutter developer | dart lord',
+                                    'Software Engineer',
                                     style: GoogleFonts.inconsolata(
                                       color: Colors.black,
                                       fontSize: 30,
@@ -100,12 +102,17 @@ class _DesktopScreenState extends State<DesktopScreen>
                             Container(
                               //color: Colors.red,
                               height: MediaQuery.of(context).size.height / 2.5,
-                              child: SvgPicture.asset(
-                                'assets/images/avatar.svg',
-                                height:
-                                    MediaQuery.of(context).size.height / 2.5,
-                                // fit: BoxFit.cover,
-                              ),
+                              // child: SvgPicture.asset(
+                              //   'assets/images/avatar.svg',
+                              //   height:
+                              //       MediaQuery.of(context).size.height / 2.5,
+                              //   // fit: BoxFit.cover,
+                              // ),
+                              child: SizedBox(
+                                  height:
+                                      MediaQuery.of(context).size.height / 2.5,
+                                  child:
+                                      Image.asset('assets/images/profile.png')),
                             ),
                           ],
                         ),
@@ -114,36 +121,14 @@ class _DesktopScreenState extends State<DesktopScreen>
                     ],
                   ),
                 ),
+                Experience(),
+                Education(),
                 Projects(),
                 Aboutme(),
+                Contact(),
                 Footer(),
               ],
             ),
-            // Positioned(
-            //   top: MediaQuery.of(context).size.height / 2,
-            //   child: Padding(
-            //     padding: const EdgeInsets.only(left: 18.0),
-            //     child: GestureDetector(
-            //       onTap: () {},
-            //       child: AnimatedContainer(
-            //         duration: Duration(
-            //           milliseconds: 250,
-            //         ),
-            //         decoration: BoxDecoration(
-            //           shape: BoxShape.circle,
-            //           border: Border.all(
-            //             color: Colors.black,
-            //             width: 3,
-            //           ),
-            //         ),
-            //         child: Icon(
-            //           Icons.menu,
-            //           size: 80,
-            //         ),
-            //       ),
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       ),
@@ -189,7 +174,7 @@ class _MenuButtonState extends State<MenuButton> {
             title: "",
             iconColor: Colors.black,
             bubbleColor: backgroundCOlor,
-            icon: Icons.computer,
+            icon: Icons.work,
             titleStyle: TextStyle(fontSize: 16, color: Colors.white),
             onPress: () {
               _animationController.reverse();
@@ -207,12 +192,48 @@ class _MenuButtonState extends State<MenuButton> {
             title: "",
             iconColor: Colors.black,
             bubbleColor: backgroundCOlor,
+            icon: Icons.school_rounded,
+            titleStyle: TextStyle(fontSize: 16, color: Colors.white),
+            onPress: () {
+              _animationController.reverse();
+              scrollController.position.animateTo(
+                MediaQuery.of(context).size.height * 2 - 100,
+                duration: Duration(seconds: 1),
+                curve: Curves.decelerate,
+              );
+              setState(() {
+                iconData = Icons.menu;
+              });
+            },
+          ),
+          Bubble(
+            title: "",
+            iconColor: Colors.black,
+            bubbleColor: backgroundCOlor,
+            icon: Icons.laptop,
+            titleStyle: TextStyle(fontSize: 16, color: Colors.white),
+            onPress: () {
+              _animationController.reverse();
+              scrollController.position.animateTo(
+                MediaQuery.of(context).size.height * 2.7,
+                duration: Duration(seconds: 1),
+                curve: Curves.decelerate,
+              );
+              setState(() {
+                iconData = Icons.menu;
+              });
+            },
+          ),
+          Bubble(
+            title: "",
+            iconColor: Colors.black,
+            bubbleColor: backgroundCOlor,
             icon: Icons.info,
             titleStyle: TextStyle(fontSize: 16, color: Colors.white),
             onPress: () {
               _animationController.reverse();
               scrollController.position.animateTo(
-                MediaQuery.of(context).size.height * 2,
+                MediaQuery.of(context).size.height * 4.3,
                 duration: Duration(seconds: 1),
                 curve: Curves.decelerate,
               );

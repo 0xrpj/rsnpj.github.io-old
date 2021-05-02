@@ -20,18 +20,6 @@ class Footer extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          TextButton(
-            onPressed: () {
-              launch('https://github.com/FarrukhSajjad/portfolio-flutterWeb');
-            },
-            child: Text(
-              'get code </>',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-              ),
-            ),
-          ),
         ],
       ),
     );
