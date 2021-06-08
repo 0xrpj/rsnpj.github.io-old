@@ -1,0 +1,653 @@
+define(['dart_sdk', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/painting/colors.dart', 'packages/flutter/src/foundation/debug.dart', 'packages/flutter/src/painting/decoration.dart', 'packages/flutter/src/painting/placeholder_span.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/services/text_editing.dart', 'packages/flutter/src/painting/box_fit.dart', 'packages/flutter/src/painting/alignment.dart', 'packages/flutter/src/painting/_network_image_web.dart'], (function load__packages__flutter__src__painting__flutter_logo_dart(dart_sdk, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__painting__colors$46dart, packages__flutter__src__foundation__debug$46dart, packages__flutter__src__painting__decoration$46dart, packages__flutter__src__painting__placeholder_span$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__services__text_editing$46dart, packages__flutter__src__painting__box_fit$46dart, packages__flutter__src__painting__alignment$46dart, packages__flutter__src__painting___network_image_web$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _internal = dart_sdk._internal;
+  const _interceptors = dart_sdk._interceptors;
+  const _native_typed_data = dart_sdk._native_typed_data;
+  const _engine = dart_sdk._engine;
+  const math = dart_sdk.math;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const colors = packages__flutter__src__painting__colors$46dart.src__painting__colors;
+  const diagnostics = packages__flutter__src__foundation__debug$46dart.src__foundation__diagnostics;
+  const debug = packages__flutter__src__foundation__debug$46dart.src__foundation__debug;
+  const decoration = packages__flutter__src__painting__decoration$46dart.src__painting__decoration;
+  const text_painter = packages__flutter__src__painting__placeholder_span$46dart.src__painting__text_painter;
+  const text_span = packages__flutter__src__painting__placeholder_span$46dart.src__painting__text_span;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const text_editing = packages__flutter__src__services__text_editing$46dart.src__services__text_editing;
+  const box_fit = packages__flutter__src__painting__box_fit$46dart.src__painting__box_fit;
+  const alignment = packages__flutter__src__painting__alignment$46dart.src__painting__alignment;
+  const image_provider = packages__flutter__src__painting___network_image_web$46dart.src__painting__image_provider;
+  var flutter_logo = Object.create(dart.library);
+  var $isFinite = dartx.isFinite;
+  var $clamp = dartx.clamp;
+  var $single = dartx.single;
+  var $abs = dartx.abs;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    FlutterLogoStyleL: () => (T.FlutterLogoStyleL = dart.constFn(dart.legacy(flutter_logo.FlutterLogoStyle)))(),
+    FlutterLogoDecorationN: () => (T.FlutterLogoDecorationN = dart.constFn(dart.nullable(flutter_logo.FlutterLogoDecoration)))(),
+    EnumPropertyOfFlutterLogoStyle: () => (T.EnumPropertyOfFlutterLogoStyle = dart.constFn(diagnostics.EnumProperty$(flutter_logo.FlutterLogoStyle)))(),
+    JSArrayOfColor: () => (T.JSArrayOfColor = dart.constFn(_interceptors.JSArray$(ui.Color)))(),
+    doubleL: () => (T.doubleL = dart.constFn(dart.legacy(core.double)))(),
+    JSArrayOfdouble: () => (T.JSArrayOfdouble = dart.constFn(_interceptors.JSArray$(core.double)))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: flutter_logo.FlutterLogoStyle.prototype,
+        [_name$]: "FlutterLogoStyle.markOnly",
+        index: 0
+      });
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: flutter_logo.FlutterLogoStyle.prototype,
+        [_name$]: "FlutterLogoStyle.horizontal",
+        index: 1
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: flutter_logo.FlutterLogoStyle.prototype,
+        [_name$]: "FlutterLogoStyle.stacked",
+        index: 2
+      });
+    },
+    get C3() {
+      return C[3] = dart.constList([C[0] || CT.C0, C[1] || CT.C1, C[2] || CT.C2], T.FlutterLogoStyleL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4285887861.0
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 0,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: ui.TextAffinity.prototype,
+        [_name]: "TextAffinity.downstream",
+        index: 1
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: text_editing.TextSelection.prototype,
+        [TextRange_end]: 7,
+        [TextRange_start]: 0,
+        [TextSelection_isDirectional]: false,
+        [TextSelection_affinity]: C[7] || CT.C7,
+        [TextSelection_extentOffset]: 7,
+        [TextSelection_baseOffset]: 0
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4283745784.0
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4280923894.0
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4278278043.0
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: ui.Offset.prototype,
+        [OffsetBase__dy]: 152.2773,
+        [OffsetBase__dx]: 125.1715
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: ui.Offset.prototype,
+        [OffsetBase__dy]: 158.5341,
+        [OffsetBase__dx]: 80.8297
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 1713022
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 1712989054
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([0.7071, -0.7071, 0, 0, 0.7071, 0.7071, 0, 0, 0, 0, 1, 0, -77.697, 98.057, 0, 1], T.doubleL());
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: ui.Rect.prototype,
+        [Rect_bottom]: 162.5,
+        [Rect_right]: 99.19999999999999,
+        [Rect_top]: 123.1,
+        [Rect_left]: 59.8
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: ui.Size.prototype,
+        [OffsetBase__dy]: 232,
+        [OffsetBase__dx]: 820
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: ui.Size.prototype,
+        [OffsetBase__dy]: 306,
+        [OffsetBase__dx]: 252
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: ui.Size.prototype,
+        [OffsetBase__dy]: 202,
+        [OffsetBase__dx]: 202
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294967295.0
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 16777215
+      });
+    }
+  }, false);
+  var C = Array(22).fill(void 0);
+  var I = [
+    "file:///C:/flutter/packages/flutter/lib/src/painting/flutter_logo.dart",
+    "package:flutter/src/painting/flutter_logo.dart"
+  ];
+  var _name$ = dart.privateName(flutter_logo, "_name");
+  flutter_logo.FlutterLogoStyle = class FlutterLogoStyle extends core.Object {
+    toString() {
+      return this[_name$];
+    }
+  };
+  (flutter_logo.FlutterLogoStyle.new = function(index, _name) {
+    if (index == null) dart.nullFailed(I[0], 24, 6, "index");
+    if (_name == null) dart.nullFailed(I[0], 24, 6, "_name");
+    this.index = index;
+    this[_name$] = _name;
+    ;
+  }).prototype = flutter_logo.FlutterLogoStyle.prototype;
+  dart.addTypeTests(flutter_logo.FlutterLogoStyle);
+  dart.addTypeCaches(flutter_logo.FlutterLogoStyle);
+  dart.setLibraryUri(flutter_logo.FlutterLogoStyle, I[1]);
+  dart.setFieldSignature(flutter_logo.FlutterLogoStyle, () => ({
+    __proto__: dart.getFields(flutter_logo.FlutterLogoStyle.__proto__),
+    index: dart.finalFieldType(core.int),
+    [_name$]: dart.finalFieldType(core.String)
+  }));
+  dart.defineExtensionMethods(flutter_logo.FlutterLogoStyle, ['toString']);
+  flutter_logo.FlutterLogoStyle.markOnly = C[0] || CT.C0;
+  flutter_logo.FlutterLogoStyle.horizontal = C[1] || CT.C1;
+  flutter_logo.FlutterLogoStyle.stacked = C[2] || CT.C2;
+  flutter_logo.FlutterLogoStyle.values = C[3] || CT.C3;
+  var textColor$ = dart.privateName(flutter_logo, "FlutterLogoDecoration.textColor");
+  var style$ = dart.privateName(flutter_logo, "FlutterLogoDecoration.style");
+  var margin$ = dart.privateName(flutter_logo, "FlutterLogoDecoration.margin");
+  var _position$ = dart.privateName(flutter_logo, "FlutterLogoDecoration._position");
+  var _opacity$ = dart.privateName(flutter_logo, "FlutterLogoDecoration._opacity");
+  var Color_value = dart.privateName(ui, "Color.value");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  var _position = dart.privateName(flutter_logo, "_position");
+  var _opacity = dart.privateName(flutter_logo, "_opacity");
+  var _inTransition = dart.privateName(flutter_logo, "_inTransition");
+  flutter_logo.FlutterLogoDecoration = class FlutterLogoDecoration extends decoration.Decoration {
+    get textColor() {
+      return this[textColor$];
+    }
+    set textColor(value) {
+      super.textColor = value;
+    }
+    get style() {
+      return this[style$];
+    }
+    set style(value) {
+      super.style = value;
+    }
+    get margin() {
+      return this[margin$];
+    }
+    set margin(value) {
+      super.margin = value;
+    }
+    get [_position]() {
+      return this[_position$];
+    }
+    set [_position](value) {
+      super[_position] = value;
+    }
+    get [_opacity]() {
+      return this[_opacity$];
+    }
+    set [_opacity](value) {
+      super[_opacity] = value;
+    }
+    get [_inTransition]() {
+      return this[_opacity] !== 1.0 || this[_position] !== -1.0 && this[_position] !== 0.0 && this[_position] !== 1.0;
+    }
+    debugAssertIsValid() {
+      if (!(this.textColor != null && this.style != null && this.margin != null && this[_position] != null && this[_position][$isFinite] && this[_opacity] != null && dart.notNull(this[_opacity]) >= 0.0 && dart.notNull(this[_opacity]) <= 1.0)) dart.assertFailed(null, I[0], 82, 12, "textColor != null\r\n        && style != null\r\n        && margin != null\r\n        && _position != null\r\n        && _position.isFinite\r\n        && _opacity != null\r\n        && _opacity >= 0.0\r\n        && _opacity <= 1.0");
+      return true;
+    }
+    get isComplex() {
+      return !dart.test(this[_inTransition]);
+    }
+    static lerp(a, b, t) {
+      if (t == null) dart.nullFailed(I[0], 109, 97, "t");
+      if (!(t != null)) dart.assertFailed(null, I[0], 110, 12, "t != null");
+      if (!(a == null || dart.test(a.debugAssertIsValid()))) dart.assertFailed(null, I[0], 111, 12, "a == null || a.debugAssertIsValid()");
+      if (!(b == null || dart.test(b.debugAssertIsValid()))) dart.assertFailed(null, I[0], 112, 12, "b == null || b.debugAssertIsValid()");
+      if (a == null && b == null) return null;
+      if (a == null) {
+        return new flutter_logo.FlutterLogoDecoration.__(dart.nullCheck(b).textColor, b.style, b.margin['*'](t), b[_position], dart.notNull(b[_opacity]) * t[$clamp](0.0, 1.0));
+      }
+      if (b == null) {
+        return new flutter_logo.FlutterLogoDecoration.__(a.textColor, a.style, a.margin['*'](t), a[_position], dart.notNull(a[_opacity]) * (1.0 - dart.notNull(t))[$clamp](0.0, 1.0));
+      }
+      if (t === 0.0) return a;
+      if (t === 1.0) return b;
+      return new flutter_logo.FlutterLogoDecoration.__(dart.nullCheck(ui.Color.lerp(a.textColor, b.textColor, t)), dart.notNull(t) < 0.5 ? a.style : b.style, dart.nullCheck(edge_insets.EdgeInsets.lerp(a.margin, b.margin, t)), dart.notNull(a[_position]) + (dart.notNull(b[_position]) - dart.notNull(a[_position])) * dart.notNull(t), (dart.notNull(a[_opacity]) + (dart.notNull(b[_opacity]) - dart.notNull(a[_opacity])) * dart.notNull(t))[$clamp](0.0, 1.0));
+    }
+    lerpFrom(a, t) {
+      if (t == null) dart.nullFailed(I[0], 147, 57, "t");
+      if (!dart.test(this.debugAssertIsValid())) dart.assertFailed(null, I[0], 148, 12, "debugAssertIsValid()");
+      if (a == null || flutter_logo.FlutterLogoDecoration.is(a)) {
+        if (!(a == null || dart.test(a.debugAssertIsValid()))) dart.assertFailed(null, I[0], 150, 14, "a == null || a.debugAssertIsValid()");
+        return flutter_logo.FlutterLogoDecoration.lerp(T.FlutterLogoDecorationN().as(a), this, t);
+      }
+      return T.FlutterLogoDecorationN().as(super.lerpFrom(a, t));
+    }
+    lerpTo(b, t) {
+      if (t == null) dart.nullFailed(I[0], 157, 55, "t");
+      if (!dart.test(this.debugAssertIsValid())) dart.assertFailed(null, I[0], 158, 12, "debugAssertIsValid()");
+      if (b == null || flutter_logo.FlutterLogoDecoration.is(b)) {
+        if (!(b == null || dart.test(b.debugAssertIsValid()))) dart.assertFailed(null, I[0], 160, 14, "b == null || b.debugAssertIsValid()");
+        return flutter_logo.FlutterLogoDecoration.lerp(this, T.FlutterLogoDecorationN().as(b), t);
+      }
+      return T.FlutterLogoDecorationN().as(super.lerpTo(b, t));
+    }
+    hitTest(size, position, opts) {
+      if (size == null) dart.nullFailed(I[0], 168, 21, "size");
+      if (position == null) dart.nullFailed(I[0], 168, 34, "position");
+      let textDirection = opts && 'textDirection' in opts ? opts.textDirection : null;
+      return true;
+    }
+    createBoxPainter(onChanged = null) {
+      if (!dart.test(this.debugAssertIsValid())) dart.assertFailed(null, I[0], 172, 12, "debugAssertIsValid()");
+      return new flutter_logo._FlutterLogoPainter.new(this);
+    }
+    getClipPath(rect, textDirection) {
+      let t0;
+      if (rect == null) dart.nullFailed(I[0], 177, 25, "rect");
+      if (textDirection == null) dart.nullFailed(I[0], 177, 45, "textDirection");
+      t0 = ui.Path.new();
+      return (() => {
+        t0.addRect(rect);
+        return t0;
+      })();
+    }
+    _equals(other) {
+      if (other == null) return false;
+      if (!dart.test(this.debugAssertIsValid())) dart.assertFailed(null, I[0], 183, 12, "debugAssertIsValid()");
+      if (this === other) return true;
+      return flutter_logo.FlutterLogoDecoration.is(other) && dart.equals(other.textColor, this.textColor) && other[_position] == this[_position] && other[_opacity] == this[_opacity];
+    }
+    get hashCode() {
+      if (!dart.test(this.debugAssertIsValid())) dart.assertFailed(null, I[0], 194, 12, "debugAssertIsValid()");
+      return ui.hashValues(this.textColor, this[_position], this[_opacity]);
+    }
+    debugFillProperties(properties) {
+      if (properties == null) dart.nullFailed(I[0], 203, 56, "properties");
+      super.debugFillProperties(properties);
+      properties.add(new colors.ColorProperty.new("textColor", this.textColor));
+      properties.add(new (T.EnumPropertyOfFlutterLogoStyle()).new("style", this.style));
+      if (dart.test(this[_inTransition])) properties.add(diagnostics.DiagnosticsNode.message("transition " + dart.str(debug.debugFormatDouble(this[_position])) + ":" + dart.str(debug.debugFormatDouble(this[_opacity]))));
+    }
+  };
+  (flutter_logo.FlutterLogoDecoration.new = function(opts) {
+    let textColor = opts && 'textColor' in opts ? opts.textColor : C[4] || CT.C4;
+    if (textColor == null) dart.nullFailed(I[0], 46, 10, "textColor");
+    let style = opts && 'style' in opts ? opts.style : C[0] || CT.C0;
+    if (style == null) dart.nullFailed(I[0], 47, 10, "style");
+    let margin = opts && 'margin' in opts ? opts.margin : C[5] || CT.C5;
+    if (margin == null) dart.nullFailed(I[0], 48, 10, "margin");
+    this[textColor$] = textColor;
+    this[style$] = style;
+    this[margin$] = margin;
+    if (!(textColor != null)) dart.assertFailed(null, I[0], 49, 15, "textColor != null");
+    if (!(style != null)) dart.assertFailed(null, I[0], 50, 15, "style != null");
+    if (!(margin != null)) dart.assertFailed(null, I[0], 51, 15, "margin != null");
+    this[_position$] = style == flutter_logo.FlutterLogoStyle.markOnly ? 0.0 : style == flutter_logo.FlutterLogoStyle.horizontal ? 1.0 : -1.0;
+    this[_opacity$] = 1.0;
+    flutter_logo.FlutterLogoDecoration.__proto__.new.call(this);
+    ;
+  }).prototype = flutter_logo.FlutterLogoDecoration.prototype;
+  (flutter_logo.FlutterLogoDecoration.__ = function(textColor, style, margin, _position, _opacity) {
+    if (textColor == null) dart.nullFailed(I[0], 55, 38, "textColor");
+    if (style == null) dart.nullFailed(I[0], 55, 54, "style");
+    if (margin == null) dart.nullFailed(I[0], 55, 66, "margin");
+    if (_position == null) dart.nullFailed(I[0], 55, 79, "_position");
+    if (_opacity == null) dart.nullFailed(I[0], 55, 95, "_opacity");
+    this[textColor$] = textColor;
+    this[style$] = style;
+    this[margin$] = margin;
+    this[_position$] = _position;
+    this[_opacity$] = _opacity;
+    flutter_logo.FlutterLogoDecoration.__proto__.new.call(this);
+    ;
+  }).prototype = flutter_logo.FlutterLogoDecoration.prototype;
+  dart.addTypeTests(flutter_logo.FlutterLogoDecoration);
+  dart.addTypeCaches(flutter_logo.FlutterLogoDecoration);
+  dart.setMethodSignature(flutter_logo.FlutterLogoDecoration, () => ({
+    __proto__: dart.getMethods(flutter_logo.FlutterLogoDecoration.__proto__),
+    lerpFrom: dart.fnType(dart.nullable(flutter_logo.FlutterLogoDecoration), [dart.nullable(decoration.Decoration), core.double]),
+    lerpTo: dart.fnType(dart.nullable(flutter_logo.FlutterLogoDecoration), [dart.nullable(decoration.Decoration), core.double]),
+    createBoxPainter: dart.fnType(decoration.BoxPainter, [], [dart.nullable(dart.fnType(dart.void, []))])
+  }));
+  dart.setGetterSignature(flutter_logo.FlutterLogoDecoration, () => ({
+    __proto__: dart.getGetters(flutter_logo.FlutterLogoDecoration.__proto__),
+    [_inTransition]: core.bool
+  }));
+  dart.setLibraryUri(flutter_logo.FlutterLogoDecoration, I[1]);
+  dart.setFieldSignature(flutter_logo.FlutterLogoDecoration, () => ({
+    __proto__: dart.getFields(flutter_logo.FlutterLogoDecoration.__proto__),
+    textColor: dart.finalFieldType(ui.Color),
+    style: dart.finalFieldType(flutter_logo.FlutterLogoStyle),
+    margin: dart.finalFieldType(edge_insets.EdgeInsets),
+    [_position]: dart.finalFieldType(core.double),
+    [_opacity]: dart.finalFieldType(core.double)
+  }));
+  dart.defineExtensionMethods(flutter_logo.FlutterLogoDecoration, ['_equals']);
+  dart.defineExtensionAccessors(flutter_logo.FlutterLogoDecoration, ['hashCode']);
+  var ___FlutterLogoPainter__textPainter = dart.privateName(flutter_logo, "_#_FlutterLogoPainter#_textPainter");
+  var ___FlutterLogoPainter__textPainter_isSet = dart.privateName(flutter_logo, "_#_FlutterLogoPainter#_textPainter#isSet");
+  var ___FlutterLogoPainter__textBoundingRect = dart.privateName(flutter_logo, "_#_FlutterLogoPainter#_textBoundingRect");
+  var ___FlutterLogoPainter__textBoundingRect_isSet = dart.privateName(flutter_logo, "_#_FlutterLogoPainter#_textBoundingRect#isSet");
+  var _config$ = dart.privateName(flutter_logo, "_config");
+  var _prepareText = dart.privateName(flutter_logo, "_prepareText");
+  var _textPainter = dart.privateName(flutter_logo, "_textPainter");
+  var _textBoundingRect = dart.privateName(flutter_logo, "_textBoundingRect");
+  var TextRange_end = dart.privateName(ui, "TextRange.end");
+  var TextRange_start = dart.privateName(ui, "TextRange.start");
+  var TextSelection_isDirectional = dart.privateName(text_editing, "TextSelection.isDirectional");
+  var _name = dart.privateName(ui, "_name");
+  var TextSelection_affinity = dart.privateName(text_editing, "TextSelection.affinity");
+  var TextSelection_extentOffset = dart.privateName(text_editing, "TextSelection.extentOffset");
+  var TextSelection_baseOffset = dart.privateName(text_editing, "TextSelection.baseOffset");
+  var OffsetBase__dy = dart.privateName(ui, "OffsetBase._dy");
+  var OffsetBase__dx = dart.privateName(ui, "OffsetBase._dx");
+  var Rect_bottom = dart.privateName(ui, "Rect.bottom");
+  var Rect_right = dart.privateName(ui, "Rect.right");
+  var Rect_top = dart.privateName(ui, "Rect.top");
+  var Rect_left = dart.privateName(ui, "Rect.left");
+  var _paintLogo = dart.privateName(flutter_logo, "_paintLogo");
+  flutter_logo._FlutterLogoPainter = class _FlutterLogoPainter extends decoration.BoxPainter {
+    get [_textPainter]() {
+      let t0;
+      return dart.test(this[___FlutterLogoPainter__textPainter_isSet]) ? (t0 = this[___FlutterLogoPainter__textPainter], t0) : dart.throw(new _internal.LateError.fieldNI("_textPainter"));
+    }
+    set [_textPainter](t0) {
+      if (t0 == null) dart.nullFailed(I[0], 225, 20, "null");
+      this[___FlutterLogoPainter__textPainter_isSet] = true;
+      this[___FlutterLogoPainter__textPainter] = t0;
+    }
+    get [_textBoundingRect]() {
+      let t1;
+      return dart.test(this[___FlutterLogoPainter__textBoundingRect_isSet]) ? (t1 = this[___FlutterLogoPainter__textBoundingRect], t1) : dart.throw(new _internal.LateError.fieldNI("_textBoundingRect"));
+    }
+    set [_textBoundingRect](t1) {
+      if (t1 == null) dart.nullFailed(I[0], 226, 13, "null");
+      this[___FlutterLogoPainter__textBoundingRect_isSet] = true;
+      this[___FlutterLogoPainter__textBoundingRect] = t1;
+    }
+    [_prepareText]() {
+      this[_textPainter] = new text_painter.TextPainter.new({text: new text_span.TextSpan.new({text: "Flutter", style: new text_style.TextStyle.new({color: this[_config$].textColor, fontFamily: "Roboto", fontSize: 100.0 * 350.0 / 247.0, fontWeight: ui.FontWeight.w300, textBaseline: ui.TextBaseline.alphabetic})}), textDirection: ui.TextDirection.ltr});
+      this[_textPainter].layout();
+      let textSize = this[_textPainter].getBoxesForSelection(C[6] || CT.C6)[$single];
+      this[_textBoundingRect] = new ui.Rect.fromLTRB(textSize.left, textSize.top, textSize.right, textSize.bottom);
+    }
+    [_paintLogo](canvas, rect) {
+      let t2, t2$, t2$0, t2$1, t2$2, t2$3, t2$4, t2$5;
+      if (canvas == null) dart.nullFailed(I[0], 251, 26, "canvas");
+      if (rect == null) dart.nullFailed(I[0], 251, 39, "rect");
+      canvas.save();
+      canvas.translate(rect.left, rect.top);
+      canvas.scale(dart.notNull(rect.width) / 202.0, dart.notNull(rect.height) / 202.0);
+      canvas.translate((202.0 - 166.0) / 2.0, 0.0);
+      let lightPaint = (t2 = ui.Paint.new(), (() => {
+        t2.color = C[8] || CT.C8;
+        return t2;
+      })());
+      let mediumPaint = (t2$ = ui.Paint.new(), (() => {
+        t2$.color = C[9] || CT.C9;
+        return t2$;
+      })());
+      let darkPaint = (t2$0 = ui.Paint.new(), (() => {
+        t2$0.color = C[10] || CT.C10;
+        return t2$0;
+      })());
+      let triangleGradient = ui.Gradient.linear(C[11] || CT.C11, C[12] || CT.C12, T.JSArrayOfColor().of([C[13] || CT.C13, C[14] || CT.C14]));
+      let trianglePaint = (t2$1 = ui.Paint.new(), (() => {
+        t2$1.shader = triangleGradient;
+        return t2$1;
+      })());
+      let topBeam = (t2$2 = ui.Path.new(), (() => {
+        t2$2.moveTo(37.7, 128.9);
+        t2$2.lineTo(9.8, 101.0);
+        t2$2.lineTo(100.4, 10.4);
+        t2$2.lineTo(156.2, 10.4);
+        return t2$2;
+      })());
+      canvas.drawPath(topBeam, lightPaint);
+      let middleBeam = (t2$3 = ui.Path.new(), (() => {
+        t2$3.moveTo(156.2, 94.0);
+        t2$3.lineTo(100.4, 94.0);
+        t2$3.lineTo(78.5, 115.9);
+        t2$3.lineTo(106.4, 143.8);
+        return t2$3;
+      })());
+      canvas.drawPath(middleBeam, lightPaint);
+      let bottomBeam = (t2$4 = ui.Path.new(), (() => {
+        t2$4.moveTo(79.5, 170.7);
+        t2$4.lineTo(100.4, 191.6);
+        t2$4.lineTo(156.2, 191.6);
+        t2$4.lineTo(107.4, 142.8);
+        return t2$4;
+      })());
+      canvas.drawPath(bottomBeam, darkPaint);
+      canvas.save();
+      canvas.transform(_native_typed_data.NativeFloat64List.fromList(C[15] || CT.C15));
+      canvas.drawRect(C[16] || CT.C16, mediumPaint);
+      canvas.restore();
+      let triangle = (t2$5 = ui.Path.new(), (() => {
+        t2$5.moveTo(79.5, 170.7);
+        t2$5.lineTo(120.9, 156.4);
+        t2$5.lineTo(107.4, 142.8);
+        return t2$5;
+      })());
+      canvas.drawPath(triangle, trianglePaint);
+      canvas.restore();
+    }
+    paint(canvas, offset, configuration) {
+      let t2, t2$, t2$0;
+      if (canvas == null) dart.nullFailed(I[0], 328, 21, "canvas");
+      if (offset == null) dart.nullFailed(I[0], 328, 36, "offset");
+      if (configuration == null) dart.nullFailed(I[0], 328, 63, "configuration");
+      offset = offset['+'](this[_config$].margin.topLeft);
+      let canvasSize = this[_config$].margin.deflateSize(dart.nullCheck(configuration.size));
+      if (dart.test(canvasSize.isEmpty)) return;
+      let logoSize = null;
+      if (dart.notNull(this[_config$][_position]) > 0.0) {
+        logoSize = C[17] || CT.C17;
+      } else if (dart.notNull(this[_config$][_position]) < 0.0) {
+        logoSize = C[18] || CT.C18;
+      } else {
+        logoSize = C[19] || CT.C19;
+      }
+      let fittedSize = box_fit.applyBoxFit(box_fit.BoxFit.contain, logoSize, canvasSize);
+      if (!dart.equals(fittedSize.source, logoSize)) dart.assertFailed(null, I[0], 345, 12, "fittedSize.source == logoSize");
+      let rect = alignment.Alignment.center.inscribe(fittedSize.destination, offset['&'](canvasSize));
+      let centerSquareHeight = canvasSize.shortestSide;
+      let centerSquare = new ui.Rect.fromLTWH(dart.notNull(offset.dx) + (dart.notNull(canvasSize.width) - dart.notNull(centerSquareHeight)) / 2.0, dart.notNull(offset.dy) + (dart.notNull(canvasSize.height) - dart.notNull(centerSquareHeight)) / 2.0, centerSquareHeight, centerSquareHeight);
+      let logoTargetSquare = null;
+      if (dart.notNull(this[_config$][_position]) > 0.0) {
+        logoTargetSquare = new ui.Rect.fromLTWH(rect.left, rect.top, rect.height, rect.height);
+      } else if (dart.notNull(this[_config$][_position]) < 0.0) {
+        let logoHeight = dart.notNull(rect.height) * 191.0 / 306.0;
+        logoTargetSquare = new ui.Rect.fromLTWH(dart.notNull(rect.left) + (dart.notNull(rect.width) - logoHeight) / 2.0, rect.top, logoHeight, logoHeight);
+      } else {
+        logoTargetSquare = centerSquare;
+      }
+      let logoSquare = dart.nullCheck(ui.Rect.lerp(centerSquare, logoTargetSquare, this[_config$][_position][$abs]()));
+      if (dart.notNull(this[_config$][_opacity]) < 1.0) {
+        canvas.saveLayer(offset['&'](canvasSize), (t2 = ui.Paint.new(), (() => {
+          t2.colorFilter = new _engine._CkBlendModeColorFilter.new((C[20] || CT.C20).withOpacity(this[_config$][_opacity]), ui.BlendMode.modulate);
+          return t2;
+        })()));
+      }
+      if (this[_config$][_position] !== 0.0) {
+        if (dart.notNull(this[_config$][_position]) > 0.0) {
+          let fontSize = 2.0 / 3.0 * dart.notNull(logoSquare.height) * (1 - 10.4 * 2.0 / 202.0);
+          let scale = fontSize / 100.0;
+          let finalLeftTextPosition = 256.4 / 820.0 * dart.notNull(rect.width) - 32.0 / 350.0 * fontSize;
+          let initialLeftTextPosition = dart.notNull(rect.width) / 2.0 - dart.notNull(this[_textBoundingRect].width) * scale;
+          let textOffset = new ui.Offset.new(dart.notNull(rect.left) + dart.nullCheck(ui.lerpDouble(initialLeftTextPosition, finalLeftTextPosition, this[_config$][_position])), dart.notNull(rect.top) + (dart.notNull(rect.height) - dart.notNull(this[_textBoundingRect].height) * scale) / 2.0);
+          canvas.save();
+          if (dart.notNull(this[_config$][_position]) < 1.0) {
+            let center = logoSquare.center;
+            let path = (t2$ = ui.Path.new(), (() => {
+              t2$.moveTo(center.dx, center.dy);
+              t2$.lineTo(dart.notNull(center.dx) + dart.notNull(rect.width), dart.notNull(center.dy) - dart.notNull(rect.width));
+              t2$.lineTo(dart.notNull(center.dx) + dart.notNull(rect.width), dart.notNull(center.dy) + dart.notNull(rect.width));
+              t2$.close();
+              return t2$;
+            })());
+            canvas.clipPath(path);
+          }
+          canvas.translate(textOffset.dx, textOffset.dy);
+          canvas.scale(scale, scale);
+          this[_textPainter].paint(canvas, ui.Offset.zero);
+          canvas.restore();
+        } else if (dart.notNull(this[_config$][_position]) < 0.0) {
+          let fontSize = 0.35 * dart.notNull(logoTargetSquare.height) * (1 - 10.4 * 2.0 / 202.0);
+          let scale = fontSize / 100.0;
+          if (dart.notNull(this[_config$][_position]) > -1.0) {
+            canvas.saveLayer(this[_textBoundingRect], ui.Paint.new());
+          } else {
+            canvas.save();
+          }
+          canvas.translate(dart.notNull(logoTargetSquare.center.dx) - dart.notNull(this[_textBoundingRect].width) * scale / 2.0, logoTargetSquare.bottom);
+          canvas.scale(scale, scale);
+          this[_textPainter].paint(canvas, ui.Offset.zero);
+          if (dart.notNull(this[_config$][_position]) > -1.0) {
+            canvas.drawRect(this[_textBoundingRect].inflate(dart.notNull(this[_textBoundingRect].width) * 0.5), (t2$0 = ui.Paint.new(), (() => {
+              t2$0.blendMode = ui.BlendMode.modulate;
+              t2$0.shader = ui.Gradient.linear(new ui.Offset.new(dart.notNull(this[_textBoundingRect].width) * -0.5, 0.0), new ui.Offset.new(dart.notNull(this[_textBoundingRect].width) * 1.5, 0.0), T.JSArrayOfColor().of([C[20] || CT.C20, C[20] || CT.C20, C[21] || CT.C21, C[21] || CT.C21]), T.JSArrayOfdouble().of([0.0, math.max(core.double, 0.0, this[_config$][_position][$abs]() - 0.1), math.min(core.double, this[_config$][_position][$abs]() + 0.1, 1.0), 1.0]));
+              return t2$0;
+            })()));
+          }
+          canvas.restore();
+        }
+      }
+      this[_paintLogo](canvas, logoSquare);
+      if (dart.notNull(this[_config$][_opacity]) < 1.0) canvas.restore();
+    }
+  };
+  (flutter_logo._FlutterLogoPainter.new = function(_config) {
+    if (_config == null) dart.nullFailed(I[0], 215, 28, "_config");
+    this[___FlutterLogoPainter__textPainter] = null;
+    this[___FlutterLogoPainter__textPainter_isSet] = false;
+    this[___FlutterLogoPainter__textBoundingRect] = null;
+    this[___FlutterLogoPainter__textBoundingRect_isSet] = false;
+    this[_config$] = _config;
+    if (!(_config != null)) dart.assertFailed(null, I[0], 216, 16, "_config != null");
+    if (!dart.test(_config.debugAssertIsValid())) dart.assertFailed(null, I[0], 217, 16, "_config.debugAssertIsValid()");
+    flutter_logo._FlutterLogoPainter.__proto__.new.call(this, null);
+    this[_prepareText]();
+  }).prototype = flutter_logo._FlutterLogoPainter.prototype;
+  dart.addTypeTests(flutter_logo._FlutterLogoPainter);
+  dart.addTypeCaches(flutter_logo._FlutterLogoPainter);
+  dart.setMethodSignature(flutter_logo._FlutterLogoPainter, () => ({
+    __proto__: dart.getMethods(flutter_logo._FlutterLogoPainter.__proto__),
+    [_prepareText]: dart.fnType(dart.void, []),
+    [_paintLogo]: dart.fnType(dart.void, [ui.Canvas, ui.Rect]),
+    paint: dart.fnType(dart.void, [ui.Canvas, ui.Offset, image_provider.ImageConfiguration])
+  }));
+  dart.setGetterSignature(flutter_logo._FlutterLogoPainter, () => ({
+    __proto__: dart.getGetters(flutter_logo._FlutterLogoPainter.__proto__),
+    [_textPainter]: text_painter.TextPainter,
+    [_textBoundingRect]: ui.Rect
+  }));
+  dart.setSetterSignature(flutter_logo._FlutterLogoPainter, () => ({
+    __proto__: dart.getSetters(flutter_logo._FlutterLogoPainter.__proto__),
+    [_textPainter]: text_painter.TextPainter,
+    [_textBoundingRect]: ui.Rect
+  }));
+  dart.setLibraryUri(flutter_logo._FlutterLogoPainter, I[1]);
+  dart.setFieldSignature(flutter_logo._FlutterLogoPainter, () => ({
+    __proto__: dart.getFields(flutter_logo._FlutterLogoPainter.__proto__),
+    [_config$]: dart.finalFieldType(flutter_logo.FlutterLogoDecoration),
+    [___FlutterLogoPainter__textPainter]: dart.fieldType(dart.nullable(text_painter.TextPainter)),
+    [___FlutterLogoPainter__textPainter_isSet]: dart.fieldType(core.bool),
+    [___FlutterLogoPainter__textBoundingRect]: dart.fieldType(dart.nullable(ui.Rect)),
+    [___FlutterLogoPainter__textBoundingRect_isSet]: dart.fieldType(core.bool)
+  }));
+  dart.trackLibraries("packages/flutter/src/painting/flutter_logo.dart", {
+    "package:flutter/src/painting/flutter_logo.dart": flutter_logo
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["flutter_logo.dart"],"names":[],"mappings":"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","file":"../../../../../../../D:/packages/flutter/src/painting/flutter_logo.dart.lib.js"}');
+  // Exports:
+  return {
+    src__painting__flutter_logo: flutter_logo
+  };
+}));
+
+//# sourceMappingURL=flutter_logo.dart.lib.js.map

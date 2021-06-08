@@ -1,0 +1,6 @@
+{"logTime":"0502/045600","correlationVector":"DasNkxzJKDtztUSq1CgP16.1","action":"SyncServerConnectionManagerRequest", "result":"SYNC_SERVER_OK", "context":{"environment":"48F630A6-CB1B-4CC7-86AF-0F6627234B58", "server":"AM3PEPF000009A8"}}
+{"logTime":"0502/045602","correlationVector":"uvwB9PwhAQS5ryVfW4jPtz.1","action":"SyncServerConnectionManagerRequest", "result":"SYNC_SERVER_OK", "context":{"environment":"48F630A6-CB1B-4CC7-86AF-0F6627234B58", "server":"AM3PEPF000009A8"}}
+{"logTime":"0502/045602","correlationVector":"DasNkxzJKDtztUSq1CgP16","action":"Initial GetUpdates", "result":""}
+{"logTime":"0502/045602","correlationVector":"DasNkxzJKDtztUSq1CgP16.2","action":"GetUpdates Response", "result":"SERVER_MORE_TO_DOWNLOAD"}
+{"logTime":"0502/045602","correlationVector":"uvwB9PwhAQS5ryVfW4jPtz","action":"Initial GetUpdates", "result":""}
+{"logTime":"0502/045602","correlationVector":"uvwB9PwhAQS5ryVfW4jPtz.2","action":"GetUpdates Response", "result":"SYNCER_OK"}

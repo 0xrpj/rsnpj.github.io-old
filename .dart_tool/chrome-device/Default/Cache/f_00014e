@@ -1,0 +1,975 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/icon_data.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/painting/stadium_border.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/vector_math/vector_math_64.dart', 'packages/flutter/src/painting/alignment.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/flutter/src/material/animated_icons.dart', 'packages/flutter/src/animation/listener_helpers.dart'], (function load__packages__floating_action_bubble__floating_action_bubble_dart(dart_sdk, packages__flutter__src__widgets__icon_data$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__painting__stadium_border$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__widgets__icon$46dart, packages__vector_math__vector_math_64$46dart, packages__flutter__src__painting__alignment$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__flutter__src__material__animated_icons$46dart, packages__flutter__src__animation__listener_helpers$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const icon_data = packages__flutter__src__widgets__icon_data$46dart.src__widgets__icon_data;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const material_button = packages__flutter__src__material__icon_button$46dart.src__material__material_button;
+  const floating_action_button = packages__flutter__src__material__icon_button$46dart.src__material__floating_action_button;
+  const stadium_border = packages__flutter__src__painting__stadium_border$46dart.src__painting__stadium_border;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const media_query = packages__flutter__src__widgets__widget_span$46dart.src__widgets__media_query;
+  const scroll_physics = packages__flutter__src__widgets__widget_span$46dart.src__widgets__scroll_physics;
+  const transitions = packages__flutter__src__widgets__widget_span$46dart.src__widgets__transitions;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const vector_math_64 = packages__vector_math__vector_math_64$46dart.vector_math_64;
+  const alignment = packages__flutter__src__painting__alignment$46dart.src__painting__alignment;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const animated_icons = packages__flutter__src__material__animated_icons$46dart.src__material__animated_icons;
+  const animation = packages__flutter__src__animation__listener_helpers$46dart.src__animation__animation;
+  var floating_action_bubble = Object.create(dart.library);
+  var $toString = dartx.toString;
+  var $length = dartx.length;
+  var $_get = dartx._get;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    VoidToNvoid: () => (T.VoidToNvoid = dart.constFn(dart.nullable(T.VoidTovoid())))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))(),
+    numL: () => (T.numL = dart.constFn(dart.legacy(core.num)))(),
+    SizedBoxL: () => (T.SizedBoxL = dart.constFn(dart.legacy(basic.SizedBox)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    intL: () => (T.intL = dart.constFn(dart.legacy(core.int)))(),
+    BuildContextLAndintLToSizedBoxL: () => (T.BuildContextLAndintLToSizedBoxL = dart.constFn(dart.fnType(T.SizedBoxL(), [T.BuildContextL(), T.intL()])))(),
+    AnimationOfdouble: () => (T.AnimationOfdouble = dart.constFn(animation.Animation$(core.double)))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 24,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 19,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([], T._LocationL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 45,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 13,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8], T._LocationL());
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 46,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 13,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11, C[12] || CT.C12], T._LocationL());
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 49,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisSize",
+        [_Location_column]: 9,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15, C[16] || CT.C16], T._LocationL());
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "shape",
+        [_Location_column]: 7,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 7,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 7,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "splashColor",
+        [_Location_column]: 7,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "highlightColor",
+        [_Location_column]: 7,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "elevation",
+        [_Location_column]: 7,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "highlightElevation",
+        [_Location_column]: 7,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "disabledColor",
+        [_Location_column]: 7,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 7,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19, C[20] || CT.C20, C[21] || CT.C21, C[22] || CT.C22, C[23] || CT.C23, C[24] || CT.C24, C[25] || CT.C25, C[26] || CT.C26, C[27] || CT.C27, C[28] || CT.C28], T._LocationL());
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 27,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "item",
+        [_Location_column]: 34,
+        [_Location_line]: 113,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.constList([C[31] || CT.C31], T._LocationL());
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[30] || CT.C30,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 113,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "opacity",
+        [_Location_column]: 11,
+        [_Location_line]: 112,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 113,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.constList([C[34] || CT.C34, C[35] || CT.C35], T._LocationL());
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[33] || CT.C33,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 111,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "transform",
+        [_Location_column]: 9,
+        [_Location_line]: 110,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 111,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.constList([C[38] || CT.C38, C[39] || CT.C39], T._LocationL());
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[37] || CT.C37,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 109,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "alignment",
+        [_Location_column]: 7,
+        [_Location_line]: 106,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 109,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.constList([C[42] || CT.C42, C[43] || CT.C43], T._LocationL());
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[41] || CT.C41,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 105,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 51,
+        [_Location_line]: 130,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.constList([C[46] || CT.C46], T._LocationL());
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[45] || CT.C45,
+        [_Location_name]: null,
+        [_Location_column]: 42,
+        [_Location_line]: 130,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "shrinkWrap",
+        [_Location_column]: 13,
+        [_Location_line]: 128,
+        [_Location_file]: null
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "physics",
+        [_Location_column]: 13,
+        [_Location_line]: 129,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "separatorBuilder",
+        [_Location_column]: 13,
+        [_Location_line]: 130,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 13,
+        [_Location_line]: 131,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemCount",
+        [_Location_column]: 13,
+        [_Location_line]: 132,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemBuilder",
+        [_Location_column]: 13,
+        [_Location_line]: 133,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.constList([C[49] || CT.C49, C[50] || CT.C50, C[51] || CT.C51, C[52] || CT.C52, C[53] || CT.C53, C[54] || CT.C54], T._LocationL());
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[48] || CT.C48,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 127,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "ignoring",
+        [_Location_column]: 11,
+        [_Location_line]: 126,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 127,
+        [_Location_file]: null
+      });
+    },
+    get C56() {
+      return C[56] = dart.constList([C[57] || CT.C57, C[58] || CT.C58], T._LocationL());
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[56] || CT.C56,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 125,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: floating_action_bubble._DefaultHeroTag.prototype
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 19,
+        [_Location_line]: 143,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "progress",
+        [_Location_column]: 19,
+        [_Location_line]: 144,
+        [_Location_file]: null
+      });
+    },
+    get C61() {
+      return C[61] = dart.constList([C[62] || CT.C62, C[63] || CT.C63], T._LocationL());
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[61] || CT.C61,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 142,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 19,
+        [_Location_line]: 147,
+        [_Location_file]: null
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 19,
+        [_Location_line]: 148,
+        [_Location_file]: null
+      });
+    },
+    get C65() {
+      return C[65] = dart.constList([C[66] || CT.C66, C[67] || CT.C67], T._LocationL());
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[65] || CT.C65,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 146,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "heroTag",
+        [_Location_column]: 11,
+        [_Location_line]: 137,
+        [_Location_file]: null
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 11,
+        [_Location_line]: 138,
+        [_Location_file]: null
+      });
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 141,
+        [_Location_file]: null
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 11,
+        [_Location_line]: 150,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.constList([C[70] || CT.C70, C[71] || CT.C71, C[72] || CT.C72, C[73] || CT.C73], T._LocationL());
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[69] || CT.C69,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 136,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisSize",
+        [_Location_column]: 7,
+        [_Location_line]: 122,
+        [_Location_file]: null
+      });
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 7,
+        [_Location_line]: 123,
+        [_Location_file]: null
+      });
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 124,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C[75] = dart.constList([C[76] || CT.C76, C[77] || CT.C77, C[78] || CT.C78], T._LocationL());
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[75] || CT.C75,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 121,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+      });
+    }
+  }, false);
+  var C = Array(79).fill(void 0);
+  var I = [
+    "package:floating_action_bubble/floating_action_bubble.dart",
+    "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/floating_action_bubble-1.1.2/lib/floating_action_bubble.dart"
+  ];
+  var icon$ = dart.privateName(floating_action_bubble, "Bubble.icon");
+  var iconColor$ = dart.privateName(floating_action_bubble, "Bubble.iconColor");
+  var bubbleColor$ = dart.privateName(floating_action_bubble, "Bubble.bubbleColor");
+  var onPress$ = dart.privateName(floating_action_bubble, "Bubble.onPress");
+  var title$ = dart.privateName(floating_action_bubble, "Bubble.title");
+  var titleStyle$ = dart.privateName(floating_action_bubble, "Bubble.titleStyle");
+  floating_action_bubble.Bubble = class Bubble extends core.Object {
+    get icon() {
+      return this[icon$];
+    }
+    set icon(value) {
+      super.icon = value;
+    }
+    get iconColor() {
+      return this[iconColor$];
+    }
+    set iconColor(value) {
+      super.iconColor = value;
+    }
+    get bubbleColor() {
+      return this[bubbleColor$];
+    }
+    set bubbleColor(value) {
+      super.bubbleColor = value;
+    }
+    get onPress() {
+      return this[onPress$];
+    }
+    set onPress(value) {
+      super.onPress = value;
+    }
+    get title() {
+      return this[title$];
+    }
+    set title(value) {
+      super.title = value;
+    }
+    get titleStyle() {
+      return this[titleStyle$];
+    }
+    set titleStyle(value) {
+      super.titleStyle = value;
+    }
+  };
+  (floating_action_bubble.Bubble.new = function(opts) {
+    let title = opts && 'title' in opts ? opts.title : null;
+    let titleStyle = opts && 'titleStyle' in opts ? opts.titleStyle : null;
+    let iconColor = opts && 'iconColor' in opts ? opts.iconColor : null;
+    let bubbleColor = opts && 'bubbleColor' in opts ? opts.bubbleColor : null;
+    let icon = opts && 'icon' in opts ? opts.icon : null;
+    let onPress = opts && 'onPress' in opts ? opts.onPress : null;
+    this[title$] = title;
+    this[titleStyle$] = titleStyle;
+    this[iconColor$] = iconColor;
+    this[bubbleColor$] = bubbleColor;
+    this[icon$] = icon;
+    this[onPress$] = onPress;
+    ;
+  }).prototype = floating_action_bubble.Bubble.prototype;
+  dart.addTypeTests(floating_action_bubble.Bubble);
+  dart.addTypeCaches(floating_action_bubble.Bubble);
+  dart.setLibraryUri(floating_action_bubble.Bubble, I[0]);
+  dart.setFieldSignature(floating_action_bubble.Bubble, () => ({
+    __proto__: dart.getFields(floating_action_bubble.Bubble.__proto__),
+    icon: dart.finalFieldType(dart.legacy(icon_data.IconData)),
+    iconColor: dart.finalFieldType(dart.legacy(ui.Color)),
+    bubbleColor: dart.finalFieldType(dart.legacy(ui.Color)),
+    onPress: dart.finalFieldType(dart.legacy(core.Function)),
+    title: dart.finalFieldType(dart.legacy(core.String)),
+    titleStyle: dart.finalFieldType(dart.legacy(text_style.TextStyle))
+  }));
+  var item$ = dart.privateName(floating_action_bubble, "BubbleMenu.item");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  floating_action_bubble.BubbleMenu = class BubbleMenu extends framework.StatelessWidget {
+    get item() {
+      return this[item$];
+    }
+    set item(value) {
+      super.item = value;
+    }
+    build(context) {
+      return new material_button.MaterialButton.new({shape: new stadium_border.StadiumBorder.new(), padding: new edge_insets.EdgeInsets.only({top: 11.0, bottom: 13.0, left: 32.0, right: 32.0}), color: this.item.bubbleColor, splashColor: colors.Colors.grey.withOpacity(0.1), highlightColor: colors.Colors.grey.withOpacity(0.1), elevation: 2.0, highlightElevation: 2.0, disabledColor: this.item.bubbleColor, onPressed: T.VoidToNvoid().as(this.item.onPress), child: new basic.Row.new({mainAxisSize: flex.MainAxisSize.min, children: T.JSArrayOfWidgetL().of([this.item.icon != null ? new icon.Icon.new(this.item.icon, {color: this.item.iconColor, $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}) : new container.Container.new({$creationLocationd_0dea112b090073317d4: C[4] || CT.C4}), new basic.SizedBox.new({width: 10.0, $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), new text.Text.new(this.item.title, {style: this.item.titleStyle, $creationLocationd_0dea112b090073317d4: C[9] || CT.C9})]), $creationLocationd_0dea112b090073317d4: C[13] || CT.C13}), $creationLocationd_0dea112b090073317d4: C[17] || CT.C17});
+    }
+  };
+  (floating_action_bubble.BubbleMenu.new = function(item, opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[item$] = item;
+    floating_action_bubble.BubbleMenu.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = floating_action_bubble.BubbleMenu.prototype;
+  dart.addTypeTests(floating_action_bubble.BubbleMenu);
+  dart.addTypeCaches(floating_action_bubble.BubbleMenu);
+  dart.setMethodSignature(floating_action_bubble.BubbleMenu, () => ({
+    __proto__: dart.getMethods(floating_action_bubble.BubbleMenu.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(floating_action_bubble.BubbleMenu, I[0]);
+  dart.setFieldSignature(floating_action_bubble.BubbleMenu, () => ({
+    __proto__: dart.getFields(floating_action_bubble.BubbleMenu.__proto__),
+    item: dart.finalFieldType(dart.legacy(floating_action_bubble.Bubble))
+  }));
+  floating_action_bubble._DefaultHeroTag = class _DefaultHeroTag extends core.Object {
+    toString() {
+      return "<default FloatingActionBubble tag>";
+    }
+  };
+  (floating_action_bubble._DefaultHeroTag.new = function() {
+    ;
+  }).prototype = floating_action_bubble._DefaultHeroTag.prototype;
+  dart.addTypeTests(floating_action_bubble._DefaultHeroTag);
+  dart.addTypeCaches(floating_action_bubble._DefaultHeroTag);
+  dart.setMethodSignature(floating_action_bubble._DefaultHeroTag, () => ({
+    __proto__: dart.getMethods(floating_action_bubble._DefaultHeroTag.__proto__),
+    toString: dart.fnType(dart.legacy(core.String), []),
+    [$toString]: dart.fnType(dart.legacy(core.String), [])
+  }));
+  dart.setLibraryUri(floating_action_bubble._DefaultHeroTag, I[0]);
+  dart.defineExtensionMethods(floating_action_bubble._DefaultHeroTag, ['toString']);
+  var items$ = dart.privateName(floating_action_bubble, "FloatingActionBubble.items");
+  var onPress$0 = dart.privateName(floating_action_bubble, "FloatingActionBubble.onPress");
+  var animatedIconData$ = dart.privateName(floating_action_bubble, "FloatingActionBubble.animatedIconData");
+  var herotag$ = dart.privateName(floating_action_bubble, "FloatingActionBubble.herotag");
+  var iconData$ = dart.privateName(floating_action_bubble, "FloatingActionBubble.iconData");
+  var iconColor$0 = dart.privateName(floating_action_bubble, "FloatingActionBubble.iconColor");
+  var backGroundColor$ = dart.privateName(floating_action_bubble, "FloatingActionBubble.backGroundColor");
+  var _animation = dart.privateName(floating_action_bubble, "_animation");
+  floating_action_bubble.FloatingActionBubble = class FloatingActionBubble extends transitions.AnimatedWidget {
+    get items() {
+      return this[items$];
+    }
+    set items(value) {
+      super.items = value;
+    }
+    get onPress() {
+      return this[onPress$0];
+    }
+    set onPress(value) {
+      super.onPress = value;
+    }
+    get animatedIconData() {
+      return this[animatedIconData$];
+    }
+    set animatedIconData(value) {
+      super.animatedIconData = value;
+    }
+    get herotag() {
+      return this[herotag$];
+    }
+    set herotag(value) {
+      super.herotag = value;
+    }
+    get iconData() {
+      return this[iconData$];
+    }
+    set iconData(value) {
+      super.iconData = value;
+    }
+    get iconColor() {
+      return this[iconColor$0];
+    }
+    set iconColor(value) {
+      super.iconColor = value;
+    }
+    get backGroundColor() {
+      return this[backGroundColor$];
+    }
+    set backGroundColor(value) {
+      super.backGroundColor = value;
+    }
+    get [_animation]() {
+      return this.listenable;
+    }
+    buildItem(context, index) {
+      let t0;
+      let screenWidth = media_query.MediaQuery.of(context).size.width;
+      let textDirection = (t0 = basic.Directionality.of(context), t0 == null ? ui.TextDirection.ltr : t0);
+      let animationDirection = textDirection == ui.TextDirection.ltr ? -1.0 : 1.0;
+      let transform = vector_math_64.Matrix4.translationValues(animationDirection * (dart.notNull(screenWidth) - dart.notNull(T.numL().as(dart.dsend(dart.dload(this[_animation], 'value'), '*', [screenWidth])))) * ((dart.notNull(this.items[$length]) - dart.notNull(index)) / 4), 0.0, 0.0);
+      return new basic.Align.new({alignment: textDirection == ui.TextDirection.ltr ? alignment.Alignment.centerRight : alignment.Alignment.centerLeft, child: new basic.Transform.new({transform: transform, child: new basic.Opacity.new({opacity: core.double.as(dart.dload(this[_animation], 'value')), child: new floating_action_bubble.BubbleMenu.new(this.items[$_get](index), {$creationLocationd_0dea112b090073317d4: C[29] || CT.C29}), $creationLocationd_0dea112b090073317d4: C[32] || CT.C32}), $creationLocationd_0dea112b090073317d4: C[36] || CT.C36}), $creationLocationd_0dea112b090073317d4: C[40] || CT.C40});
+    }
+    build(context) {
+      return new basic.Column.new({mainAxisSize: flex.MainAxisSize.min, crossAxisAlignment: flex.CrossAxisAlignment.end, children: T.JSArrayOfWidgetL().of([new basic.IgnorePointer.new({ignoring: dart.equals(dart.dload(this[_animation], 'value'), 0), child: new scroll_view.ListView.separated({shrinkWrap: true, physics: new scroll_physics.NeverScrollableScrollPhysics.new(), separatorBuilder: dart.fn((_, __) => new basic.SizedBox.new({height: 12.0, $creationLocationd_0dea112b090073317d4: C[44] || CT.C44}), T.BuildContextLAndintLToSizedBoxL()), padding: new edge_insets.EdgeInsets.symmetric({vertical: 12.0}), itemCount: this.items[$length], itemBuilder: dart.bind(this, 'buildItem'), $creationLocationd_0dea112b090073317d4: C[47] || CT.C47}), $creationLocationd_0dea112b090073317d4: C[55] || CT.C55}), new floating_action_button.FloatingActionButton.new({heroTag: this.herotag == null ? C[59] || CT.C59 : this.herotag, backgroundColor: this.backGroundColor, child: this.iconData == null ? new animated_icons.AnimatedIcon.new({icon: this.animatedIconData, progress: T.AnimationOfdouble().as(this[_animation]), $creationLocationd_0dea112b090073317d4: C[60] || CT.C60}) : new icon.Icon.new(this.iconData, {color: this.iconColor, $creationLocationd_0dea112b090073317d4: C[64] || CT.C64}), onPressed: T.VoidToNvoid().as(this.onPress), $creationLocationd_0dea112b090073317d4: C[68] || CT.C68})]), $creationLocationd_0dea112b090073317d4: C[74] || CT.C74});
+    }
+  };
+  (floating_action_bubble.FloatingActionBubble.new = function(opts) {
+    let items = opts && 'items' in opts ? opts.items : null;
+    let onPress = opts && 'onPress' in opts ? opts.onPress : null;
+    let iconColor = opts && 'iconColor' in opts ? opts.iconColor : null;
+    let backGroundColor = opts && 'backGroundColor' in opts ? opts.backGroundColor : null;
+    let animation = opts && 'animation' in opts ? opts.animation : null;
+    let herotag = opts && 'herotag' in opts ? opts.herotag : null;
+    let iconData = opts && 'iconData' in opts ? opts.iconData : null;
+    let animatedIconData = opts && 'animatedIconData' in opts ? opts.animatedIconData : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[items$] = items;
+    this[onPress$0] = onPress;
+    this[iconColor$0] = iconColor;
+    this[backGroundColor$] = backGroundColor;
+    this[herotag$] = herotag;
+    this[iconData$] = iconData;
+    this[animatedIconData$] = animatedIconData;
+    if (!(iconData == null && animatedIconData != null || iconData != null && animatedIconData == null)) dart.assertFailed(null, I[1], 75, 16, "(iconData == null && animatedIconData != null) ||\n            (iconData != null && animatedIconData == null)");
+    floating_action_bubble.FloatingActionBubble.__proto__.new.call(this, {listenable: animation, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = floating_action_bubble.FloatingActionBubble.prototype;
+  dart.addTypeTests(floating_action_bubble.FloatingActionBubble);
+  dart.addTypeCaches(floating_action_bubble.FloatingActionBubble);
+  dart.setMethodSignature(floating_action_bubble.FloatingActionBubble, () => ({
+    __proto__: dart.getMethods(floating_action_bubble.FloatingActionBubble.__proto__),
+    buildItem: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext), dart.legacy(core.int)]),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setGetterSignature(floating_action_bubble.FloatingActionBubble, () => ({
+    __proto__: dart.getGetters(floating_action_bubble.FloatingActionBubble.__proto__),
+    [_animation]: dart.dynamic
+  }));
+  dart.setLibraryUri(floating_action_bubble.FloatingActionBubble, I[0]);
+  dart.setFieldSignature(floating_action_bubble.FloatingActionBubble, () => ({
+    __proto__: dart.getFields(floating_action_bubble.FloatingActionBubble.__proto__),
+    items: dart.finalFieldType(dart.legacy(core.List$(dart.legacy(floating_action_bubble.Bubble)))),
+    onPress: dart.finalFieldType(dart.legacy(core.Function)),
+    animatedIconData: dart.finalFieldType(dart.legacy(animated_icons.AnimatedIconData)),
+    herotag: dart.finalFieldType(dart.legacy(core.Object)),
+    iconData: dart.finalFieldType(dart.legacy(icon_data.IconData)),
+    iconColor: dart.finalFieldType(dart.legacy(ui.Color)),
+    backGroundColor: dart.finalFieldType(dart.legacy(ui.Color))
+  }));
+  dart.trackLibraries("packages/floating_action_bubble/floating_action_bubble.dart", {
+    "package:floating_action_bubble/floating_action_bubble.dart": floating_action_bubble
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["floating_action_bubble.dart"],"names":[],"mappings":"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","file":"../../../../../../../D:/packages/floating_action_bubble/floating_action_bubble.dart.lib.js"}');
+  // Exports:
+  return {
+    floating_action_bubble: floating_action_bubble
+  };
+}));
+
+//# sourceMappingURL=floating_action_bubble.dart.lib.js.map

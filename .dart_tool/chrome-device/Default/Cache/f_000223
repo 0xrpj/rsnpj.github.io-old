@@ -1,0 +1,597 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/icon_data.dart'], (function load__packages__fluttericon__brandico_icons_dart(dart_sdk, packages__flutter__src__widgets__icon_data$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const icon_data = packages__flutter__src__widgets__icon_data$46dart.src__widgets__icon_data;
+  var brandico_icons = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _: () => T
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62208
+      });
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62209
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62210
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62211
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62212
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62213
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62214
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62215
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62216
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62217
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62218
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62219
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62220
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62221
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62222
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62223
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62224
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62225
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62226
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62227
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62228
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62229
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62230
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62231
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62232
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62233
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62234
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62235
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62236
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62237
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62238
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62239
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62240
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62241
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62242
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62243
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62244
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62245
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62246
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62247
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62248
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62249
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62250
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62251
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "fluttericon",
+        [IconData_fontFamily]: "Brandico",
+        [IconData_codePoint]: 62252
+      });
+    }
+  }, false);
+  var C = Array(45).fill(void 0);
+  var I = ["package:fluttericon/brandico_icons.dart"];
+  var IconData_matchTextDirection = dart.privateName(icon_data, "IconData.matchTextDirection");
+  var IconData_fontPackage = dart.privateName(icon_data, "IconData.fontPackage");
+  var IconData_fontFamily = dart.privateName(icon_data, "IconData.fontFamily");
+  var IconData_codePoint = dart.privateName(icon_data, "IconData.codePoint");
+  brandico_icons.Brandico = class Brandico extends core.Object {};
+  (brandico_icons.Brandico.__ = function() {
+    ;
+  }).prototype = brandico_icons.Brandico.prototype;
+  dart.addTypeTests(brandico_icons.Brandico);
+  dart.addTypeCaches(brandico_icons.Brandico);
+  dart.setLibraryUri(brandico_icons.Brandico, I[0]);
+  dart.defineLazy(brandico_icons.Brandico, {
+    /*brandico_icons.Brandico._kFontFam*/get _kFontFam() {
+      return "Brandico";
+    },
+    /*brandico_icons.Brandico._kFontPkg*/get _kFontPkg() {
+      return "fluttericon";
+    },
+    /*brandico_icons.Brandico.facebook_1*/get facebook_1() {
+      return C[0] || CT.C0;
+    },
+    /*brandico_icons.Brandico.facebook_rect*/get facebook_rect() {
+      return C[1] || CT.C1;
+    },
+    /*brandico_icons.Brandico.twitter_1*/get twitter_1() {
+      return C[2] || CT.C2;
+    },
+    /*brandico_icons.Brandico.twitter_bird*/get twitter_bird() {
+      return C[3] || CT.C3;
+    },
+    /*brandico_icons.Brandico.icq*/get icq() {
+      return C[4] || CT.C4;
+    },
+    /*brandico_icons.Brandico.yandex*/get yandex() {
+      return C[5] || CT.C5;
+    },
+    /*brandico_icons.Brandico.yandex_rect*/get yandex_rect() {
+      return C[6] || CT.C6;
+    },
+    /*brandico_icons.Brandico.github_text*/get github_text() {
+      return C[7] || CT.C7;
+    },
+    /*brandico_icons.Brandico.github_1*/get github_1() {
+      return C[8] || CT.C8;
+    },
+    /*brandico_icons.Brandico.googleplus_rect*/get googleplus_rect() {
+      return C[9] || CT.C9;
+    },
+    /*brandico_icons.Brandico.vkontakte_rect*/get vkontakte_rect() {
+      return C[10] || CT.C10;
+    },
+    /*brandico_icons.Brandico.skype_1*/get skype_1() {
+      return C[11] || CT.C11;
+    },
+    /*brandico_icons.Brandico.odnoklassniki*/get odnoklassniki() {
+      return C[12] || CT.C12;
+    },
+    /*brandico_icons.Brandico.odnoklassniki_rect*/get odnoklassniki_rect() {
+      return C[13] || CT.C13;
+    },
+    /*brandico_icons.Brandico.vimeo_rect*/get vimeo_rect() {
+      return C[14] || CT.C14;
+    },
+    /*brandico_icons.Brandico.vimeo_1*/get vimeo_1() {
+      return C[15] || CT.C15;
+    },
+    /*brandico_icons.Brandico.tumblr_rect*/get tumblr_rect() {
+      return C[16] || CT.C16;
+    },
+    /*brandico_icons.Brandico.tumblr_1*/get tumblr_1() {
+      return C[17] || CT.C17;
+    },
+    /*brandico_icons.Brandico.friendfeed*/get friendfeed() {
+      return C[18] || CT.C18;
+    },
+    /*brandico_icons.Brandico.friendfeed_rect*/get friendfeed_rect() {
+      return C[19] || CT.C19;
+    },
+    /*brandico_icons.Brandico.blogger_1*/get blogger_1() {
+      return C[20] || CT.C20;
+    },
+    /*brandico_icons.Brandico.blogger_rect*/get blogger_rect() {
+      return C[21] || CT.C21;
+    },
+    /*brandico_icons.Brandico.deviantart*/get deviantart() {
+      return C[22] || CT.C22;
+    },
+    /*brandico_icons.Brandico.jabber*/get jabber() {
+      return C[23] || CT.C23;
+    },
+    /*brandico_icons.Brandico.lastfm_1*/get lastfm_1() {
+      return C[24] || CT.C24;
+    },
+    /*brandico_icons.Brandico.lastfm_rect*/get lastfm_rect() {
+      return C[25] || CT.C25;
+    },
+    /*brandico_icons.Brandico.linkedin_1*/get linkedin_1() {
+      return C[26] || CT.C26;
+    },
+    /*brandico_icons.Brandico.linkedin_rect*/get linkedin_rect() {
+      return C[27] || CT.C27;
+    },
+    /*brandico_icons.Brandico.picasa*/get picasa() {
+      return C[28] || CT.C28;
+    },
+    /*brandico_icons.Brandico.wordpress_1*/get wordpress_1() {
+      return C[29] || CT.C29;
+    },
+    /*brandico_icons.Brandico.instagram_1*/get instagram_1() {
+      return C[30] || CT.C30;
+    },
+    /*brandico_icons.Brandico.instagram_filled*/get instagram_filled() {
+      return C[31] || CT.C31;
+    },
+    /*brandico_icons.Brandico.diigo*/get diigo() {
+      return C[32] || CT.C32;
+    },
+    /*brandico_icons.Brandico.box*/get box() {
+      return C[33] || CT.C33;
+    },
+    /*brandico_icons.Brandico.box_rect*/get box_rect() {
+      return C[34] || CT.C34;
+    },
+    /*brandico_icons.Brandico.tudou*/get tudou() {
+      return C[35] || CT.C35;
+    },
+    /*brandico_icons.Brandico.youku*/get youku() {
+      return C[36] || CT.C36;
+    },
+    /*brandico_icons.Brandico.win8*/get win8() {
+      return C[37] || CT.C37;
+    },
+    /*brandico_icons.Brandico.amex*/get amex() {
+      return C[38] || CT.C38;
+    },
+    /*brandico_icons.Brandico.discover*/get discover() {
+      return C[39] || CT.C39;
+    },
+    /*brandico_icons.Brandico.visa*/get visa() {
+      return C[40] || CT.C40;
+    },
+    /*brandico_icons.Brandico.mastercard*/get mastercard() {
+      return C[41] || CT.C41;
+    },
+    /*brandico_icons.Brandico.houzz*/get houzz() {
+      return C[42] || CT.C42;
+    },
+    /*brandico_icons.Brandico.bandcamp*/get bandcamp() {
+      return C[43] || CT.C43;
+    },
+    /*brandico_icons.Brandico.codepen*/get codepen() {
+      return C[44] || CT.C44;
+    }
+  }, true);
+  dart.trackLibraries("packages/fluttericon/brandico_icons.dart", {
+    "package:fluttericon/brandico_icons.dart": brandico_icons
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["brandico_icons.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAsBc;;;;;MAEC,iCAAS;;;MACT,iCAAS;;;MAEA,kCAAU;;;MAEV,qCAAa;;;MAEb,iCAAS;;;MAET,oCAAY;;;MAEZ,2BAAG;;;MAEH,8BAAM;;;MAEN,mCAAW;;;MAEX,mCAAW;;;MAEX,gCAAQ;;;MAER,uCAAe;;;MAEf,sCAAc;;;MAEd,+BAAO;;;MAEP,qCAAa;;;MAEb,0CAAkB;;;MAElB,kCAAU;;;MAEV,+BAAO;;;MAEP,mCAAW;;;MAEX,gCAAQ;;;MAER,kCAAU;;;MAEV,uCAAe;;;MAEf,iCAAS;;;MAET,oCAAY;;;MAEZ,kCAAU;;;MAEV,8BAAM;;;MAEN,gCAAQ;;;MAER,mCAAW;;;MAEX,kCAAU;;;MAEV,qCAAa;;;MAEb,8BAAM;;;MAEN,mCAAW;;;MAEX,mCAAW;;;MAEX,wCAAgB;;;MAEhB,6BAAK;;;MAEL,2BAAG;;;MAEH,gCAAQ;;;MAER,6BAAK;;;MAEL,6BAAK;;;MAEL,4BAAI;;;MAEJ,4BAAI;;;MAEJ,gCAAQ;;;MAER,4BAAI;;;MAEJ,kCAAU;;;MAEV,6BAAK;;;MAEL,gCAAQ;;;MAER,+BAAO","file":"../../../../../../../D:/packages/fluttericon/brandico_icons.dart.lib.js"}');
+  // Exports:
+  return {
+    brandico_icons: brandico_icons
+  };
+}));
+
+//# sourceMappingURL=brandico_icons.dart.lib.js.map

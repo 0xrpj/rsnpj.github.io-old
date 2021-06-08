@@ -1,0 +1,727 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/icon_data.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/url_launcher/url_launcher.dart'], (function load__packages__social_media_buttons__social_media_buttons_dart(dart_sdk, packages__flutter__src__widgets__icon_data$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__widgets__icon$46dart, packages__url_launcher__url_launcher$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const io = dart_sdk.io;
+  const async = dart_sdk.async;
+  const html = dart_sdk.html;
+  const ui = dart_sdk.ui;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const icon_data = packages__flutter__src__widgets__icon_data$46dart.src__widgets__icon_data;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const gesture_detector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__gesture_detector;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const url_launcher = packages__url_launcher__url_launcher$46dart.url_launcher;
+  var social_media_buttons = Object.create(dart.library);
+  var social_media_button = Object.create(dart.library);
+  var $open = dartx.open;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61805
+      });
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61593
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61665
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 59392
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61821
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61594
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61595
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61856
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 62001
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61799
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 62002
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61884
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61857
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61822
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 61837
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 62124
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 59395
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: "social_media_buttons",
+        [IconData_fontFamily]: "SocialMediaIcons",
+        [IconData_codePoint]: 62010
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 8,
+        [EdgeInsets_right]: 8,
+        [EdgeInsets_top]: 8,
+        [EdgeInsets_left]: 8
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 11,
+        [_Location_line]: 187,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "size",
+        [_Location_column]: 11,
+        [_Location_line]: 188,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 11,
+        [_Location_line]: 189,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21, C[22] || CT.C22, C[23] || CT.C23], T._LocationL());
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 186,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/social_media_buttons-0.1.2/lib/social_media_button.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 186,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 9,
+        [_Location_line]: 191,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.constList([C[26] || CT.C26, C[27] || CT.C27], T._LocationL());
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[25] || CT.C25,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 185,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/social_media_buttons-0.1.2/lib/social_media_button.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 7,
+        [_Location_line]: 184,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 185,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30, C[31] || CT.C31], T._LocationL());
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 183,
+        [_Location_file]: "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/social_media_buttons-0.1.2/lib/social_media_button.dart"
+      });
+    }
+  }, false);
+  var C = Array(32).fill(void 0);
+  var I = [
+    "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/social_media_buttons-0.1.2/lib/social_media_button.dart",
+    "package:social_media_buttons/social_media_button.dart"
+  ];
+  var url$ = dart.privateName(social_media_button, "SocialMediaButton.url");
+  var onTap$ = dart.privateName(social_media_button, "SocialMediaButton.onTap");
+  var iconData$ = dart.privateName(social_media_button, "SocialMediaButton.iconData");
+  var size$ = dart.privateName(social_media_button, "SocialMediaButton.size");
+  var color$ = dart.privateName(social_media_button, "SocialMediaButton.color");
+  var IconData_matchTextDirection = dart.privateName(icon_data, "IconData.matchTextDirection");
+  var IconData_fontPackage = dart.privateName(icon_data, "IconData.fontPackage");
+  var IconData_fontFamily = dart.privateName(icon_data, "IconData.fontFamily");
+  var IconData_codePoint = dart.privateName(icon_data, "IconData.codePoint");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var _launchURLInMobile = dart.privateName(social_media_button, "_launchURLInMobile");
+  var _launchURLInWeb = dart.privateName(social_media_button, "_launchURLInWeb");
+  social_media_button.SocialMediaButton = class SocialMediaButton extends framework.StatelessWidget {
+    get url() {
+      return this[url$];
+    }
+    set url(value) {
+      super.url = value;
+    }
+    get onTap() {
+      return this[onTap$];
+    }
+    set onTap(value) {
+      super.onTap = value;
+    }
+    get iconData() {
+      return this[iconData$];
+    }
+    set iconData(value) {
+      super.iconData = value;
+    }
+    get size() {
+      return this[size$];
+    }
+    set size(value) {
+      super.size = value;
+    }
+    get color() {
+      return this[color$];
+    }
+    set color(value) {
+      super.color = value;
+    }
+    build(context) {
+      return new basic.Padding.new({padding: C[18] || CT.C18, child: new gesture_detector.GestureDetector.new({child: new icon.Icon.new(this.iconData, {size: this.size, color: this.color, $creationLocationd_0dea112b090073317d4: C[19] || CT.C19}), onTap: dart.fn(() => {
+            if (this.url != null) {
+              try {
+                if (dart.test(io.Platform.isIOS) || dart.test(io.Platform.isAndroid)) {
+                  this[_launchURLInMobile](this.url);
+                } else {
+                  this[_launchURLInWeb](this.url);
+                }
+              } catch (e$) {
+                let e = dart.getThrown(e$);
+                core.print(e);
+                this[_launchURLInWeb](this.url);
+              }
+              return;
+            } else if (this.onTap != null) {
+              this.onTap();
+            } else {
+              dart.throw(core.Exception.new("url and onTap shouldnt be null at the same time !"));
+            }
+          }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[24] || CT.C24}), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28});
+    }
+    [_launchURLInMobile](url) {
+      return async.async(dart.dynamic, function* _launchURLInMobile() {
+        if (dart.test(yield url_launcher.canLaunch(url))) {
+          yield url_launcher.launch(url);
+        } else {
+          dart.throw("Could not launch " + dart.str(url));
+        }
+      });
+    }
+    [_launchURLInWeb](url) {
+      html.window[$open](url, "");
+    }
+  };
+  (social_media_button.SocialMediaButton.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let iconData = opts && 'iconData' in opts ? opts.iconData : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[url$] = url;
+    this[onTap$] = onTap;
+    this[iconData$] = iconData;
+    this[size$] = size;
+    this[color$] = color;
+    if (!(url != null)) dart.assertFailed(null, I[0], 34, 16, "url != null");
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.instagram = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[0] || CT.C0;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.twitter = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[1] || CT.C1;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.linkedin = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[2] || CT.C2;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.stackoverflow = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[3] || CT.C3;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.dribbble = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[4] || CT.C4;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.facebook = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[5] || CT.C5;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.github = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[6] || CT.C6;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.google = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[7] || CT.C7;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.pinterest = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[8] || CT.C8;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.youtube = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[9] || CT.C9;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.whatsapp = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[10] || CT.C10;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.spotify = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[11] || CT.C11;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.reddit = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[12] || CT.C12;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.skype = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[13] || CT.C13;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.stackexchange = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[14] || CT.C14;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.snapchat = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[15] || CT.C15;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.soundcloud = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[16] || CT.C16;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  (social_media_button.SocialMediaButton.medium = function(opts) {
+    let iconData = opts && 'iconData' in opts ? opts.iconData : C[17] || CT.C17;
+    let url = opts && 'url' in opts ? opts.url : null;
+    let size = opts && 'size' in opts ? opts.size : 24;
+    let onTap = opts && 'onTap' in opts ? opts.onTap : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[iconData$] = iconData;
+    this[url$] = url;
+    this[size$] = size;
+    this[onTap$] = onTap;
+    this[color$] = color;
+    social_media_button.SocialMediaButton.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = social_media_button.SocialMediaButton.prototype;
+  dart.addTypeTests(social_media_button.SocialMediaButton);
+  dart.addTypeCaches(social_media_button.SocialMediaButton);
+  dart.setMethodSignature(social_media_button.SocialMediaButton, () => ({
+    __proto__: dart.getMethods(social_media_button.SocialMediaButton.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)]),
+    [_launchURLInMobile]: dart.fnType(dart.dynamic, [dart.legacy(core.String)]),
+    [_launchURLInWeb]: dart.fnType(dart.void, [dart.legacy(core.String)])
+  }));
+  dart.setLibraryUri(social_media_button.SocialMediaButton, I[1]);
+  dart.setFieldSignature(social_media_button.SocialMediaButton, () => ({
+    __proto__: dart.getFields(social_media_button.SocialMediaButton.__proto__),
+    url: dart.finalFieldType(dart.legacy(core.String)),
+    onTap: dart.finalFieldType(dart.legacy(dart.fnType(dart.void, []))),
+    iconData: dart.finalFieldType(dart.legacy(icon_data.IconData)),
+    size: dart.finalFieldType(dart.legacy(core.double)),
+    color: dart.finalFieldType(dart.legacy(ui.Color))
+  }));
+  dart.trackLibraries("packages/social_media_buttons/social_media_buttons.dart", {
+    "package:social_media_buttons/social_media_buttons.dart": social_media_buttons,
+    "package:social_media_buttons/social_media_button.dart": social_media_button
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["social_media_button.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAUe;;;;;;IAIY;;;;;;IAIV;;;;;;IAGF;;;;;;IAGD;;;;;;UA6Jc;AACxB,YAAO,yDAEE,iDACE,kBACL,sBACM,kBACC,8EAEF;AACL,gBAAI,AAAI;AACN;AACE,8BAAa,gCAAkB;AACN,kBAAvB,yBAAmB;;AAEC,kBAApB,sBAAgB;;;oBAEX;AACC,gBAAR,WAAM,CAAC;AACa,gBAApB,sBAAgB;;AAElB;kBACK,KAAI,AAAM;AACR,cAAP,AAAK;;AAGmD,cADxD,WAAM,mBACF;;;IAKd;yBAE0B;AAAR;AAChB,sBAAI,MAAM,uBAAU,GAAG;AACJ,UAAjB,MAAM,oBAAO,GAAG;;AAEa,UAA7B,WAAM,AAAuB,+BAAJ,GAAG;;MAEhC;;sBAE4B;AACD,MAApB,AAAO,mBAAK,GAAG,EAAE;IACxB;;;QArMM;QACW;QACA;QACA;QACV;QACA;;IAJU;IACA;IACA;IACV;IACA;UACM,AAAI,GAAD;AACV,yEAAW,GAAG;;EAAC;;QAGd;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ;;QAGK;QACU;QACV;QACA;QACA;;IAJA;IACU;IACV;IACA;IACA;AALD;;EAMJ","file":"../../../../../../packages/social_media_buttons/social_media_buttons.dart.lib.js"}');
+  // Exports:
+  return {
+    social_media_buttons: social_media_buttons,
+    social_media_button: social_media_button
+  };
+}));
+
+//# sourceMappingURL=social_media_buttons.dart.lib.js.map
