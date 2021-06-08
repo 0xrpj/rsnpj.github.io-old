@@ -259,7 +259,7 @@ class _State extends State<Socials> {
               child: GestureDetector(
                 onTap: () {
                   launchUrl(
-                      'https://drive.google.com/file/d/1qowpkmop47k5qOiXKCNG0LDkqTKtYDY1/view?usp=sharing');
+                      'https://drive.google.com/file/d/18-bhE9Ot77Ng9wH4XfA-fUlvbhVSy-fV/view');
                 },
                 child: AnimatedContainer(
                   padding: EdgeInsets.all(8),

@@ -40,7 +40,7 @@ class Education extends StatelessWidget {
                   EducationWidget(
                     projectName: 'Jaya Multiple Campus',
                     projectDesc:
-                        '+2 in Science (2019-2022)\n\nPhysics+Chemistry+Maths\n\nGPA:3.85',
+                        '+2 in Science (2017-2019)\n\nPhysics+Chemistry+Maths\n\nGPA:3.85',
                     url: '',
                   ),
                   SizedBox(

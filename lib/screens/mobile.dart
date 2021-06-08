@@ -151,8 +151,7 @@ class _MobileState extends State<Mobile> {
                         projectName: 'Chat application',
                         projectDesc:
                             'Coded a chat application from with HTML, CSS, JS, NodeJS, Express, and Socket.io but with no database to store data (for privacy concerns).',
-                        url:
-                            'https://github.com/rsnpj/Inventory-Managment-System-in-C',
+                        url: 'https://github.com/rsnpj/Real-time-chat-app',
                       ),
                       SizedBox(
                         height: 35,
